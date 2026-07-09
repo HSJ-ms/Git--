@@ -1,25 +1,32 @@
 ---
 name: analyze-github-trending
-description: Analyze GitHub Trending repositories and generate publish-ready Chinese daily, weekly, and monthly Markdown reports plus a bundled dashboard webpage. Use when Codex needs to collect all repositories from GitHub Trending, read repository README content, produce macro trend analysis with strict What/Why/How framing, generate trend-aware per-project AI Insight summaries, or explicitly mark AI open source, AI agents, and AI software development automation projects.
+description: Analyze GitHub Trending repositories and generate publish-ready Chinese daily, weekly, and monthly Markdown reports with a synced dashboard view. Use when an agent needs to collect all repositories from GitHub Trending, read repository README content, produce macro trend analysis with strict What/Why/How framing, generate trend-aware per-project AI Insight summaries, or explicitly mark AI open source, AI agents, and AI software development automation projects. The canonical execution entrypoint is `scripts/run-analysis.mjs`, so the workflow stays portable across Codex, Claude Code, OpenCode, and other Agent CLI environments.
 ---
 
 # Analyze GitHub Trending
 
 ## Overview
 
-Use this skill to turn GitHub Trending daily, weekly, and monthly pages into publish-ready Chinese reports and a dashboard-style webpage.
-Run the bundled Node script to collect repository metadata, read rendered README content from each repository page, extract tags and trend signals, classify AI relevance, and write Markdown, cache JSON, and dashboard outputs.
+Use this skill to turn GitHub Trending daily, weekly, and monthly pages into publish-ready Chinese reports and a synced dashboard-style view.
+Treat the bundled Node script as the canonical workflow: it collects repository metadata, reads rendered README content from each repository page, extracts tags and trend signals, classifies AI relevance, and writes Markdown plus synchronized cache and dashboard outputs.
+
+This `SKILL.md` only adapts the toolkit to Codex skill discovery. The repository itself is agent-agnostic:
+
+- `README.md` is the primary human-facing and portable usage guide
+- `CLAUDE.md` provides Claude Code-oriented project instructions
+- `AGENTS.md` provides OpenCode and general agent-oriented instructions
+- `scripts/run-analysis.mjs` is the canonical CLI entrypoint for every environment
 
 ## Workflow
 
-1. Run the analysis script from the working directory where `reports/github-trending` should be saved.
-2. Review the generated Markdown reports first; they are the source publishable articles.
-3. Use the generated dashboard at `reports/github-trending/dashboard/index.html` for a visual overview that matches the project dashboard style.
+1. Run the analysis script from the repository root, or adjust the relative path if this toolkit is vendored as a subdirectory.
+2. Review the generated Markdown reports first; they are the canonical publishable outputs.
+3. Treat the generated dashboard at `reports/github-trending/dashboard/index.html` as a synchronized companion view, not a separate source of truth.
 4. Edit generated articles only when the user asks for tone, structure, or editorial refinement.
 
 ## Bundled Resources
 
-This skill is self-contained for independent publishing:
+This toolkit is self-contained for independent publishing:
 
 - `scripts/analysis-core.mjs`
   - 主分析与报告生成逻辑
@@ -65,28 +72,30 @@ Follow these four standardized steps:
 Run the full daily + weekly + monthly workflow:
 
 ```powershell
-node .\analyze-github-trending\scripts\run-analysis.mjs --period all
+node .\scripts\run-analysis.mjs --period all
 ```
 
 Run a single period:
 
 ```powershell
-node .\analyze-github-trending\scripts\run-analysis.mjs --period daily
-node .\analyze-github-trending\scripts\run-analysis.mjs --period weekly
-node .\analyze-github-trending\scripts\run-analysis.mjs --period monthly
+node .\scripts\run-analysis.mjs --period daily
+node .\scripts\run-analysis.mjs --period weekly
+node .\scripts\run-analysis.mjs --period monthly
 ```
 
 Override the output directory or report date when needed:
 
 ```powershell
-node .\analyze-github-trending\scripts\run-analysis.mjs --period all --output-dir .\reports\github-trending --date 2026-07-03
+node .\scripts\run-analysis.mjs --period all --output-dir ..\reports\github-trending --date 2026-07-03
 ```
+
+If another workspace vendors this toolkit as a subdirectory, prefix the script path accordingly, for example `node .\analyze-github-trending\scripts\run-analysis.mjs --period all`.
 
 ## Expected Outputs
 
-- Save Markdown reports under `./reports/github-trending/<date>-daily.md`, `<date>-weekly.md`, and `<date>-monthly.md` by default.
-- Save a dashboard webpage under `./reports/github-trending/dashboard/index.html`.
+- Save canonical Markdown reports under `./reports/github-trending/<date>-daily.md`, `<date>-weekly.md`, and `<date>-monthly.md` by default.
 - Save parsed Trending JSON and enriched repository JSON under `./reports/github-trending/cache/<date>/`.
+- Save a synced dashboard webpage under `./reports/github-trending/dashboard/index.html`.
 - Keep every repository from each selected Trending page.
 - Mark AI-related repositories inline with visible `【重点关注：...】` labels.
 
@@ -129,6 +138,7 @@ The project analysis must stay compact, Chinese, and answer these questions clea
 - Treat generated Markdown as publishable drafts.
 - Read [references/focus-rubric.md](references/focus-rubric.md) when you need to understand why a repository was marked as `重点关注`.
 - Read [references/report-guidelines.md](references/report-guidelines.md) when reshaping the article without changing the data pipeline.
+- Keep the workflow portable: do not rely on Codex-only behaviors when the same result can be produced by reading Markdown instructions and running the bundled Node scripts.
 - When revising `整体趋势分析`, keep it anchored to shared pain points and macro trends rather than per-repo summaries.
 - When revising project-level `AI Insight`, preserve the macro-to-micro routing logic instead of rewriting each project as an isolated blurb.
 - If the user asks for deeper technical commentary, build on cached README-derived notes instead of re-scraping unless the report date or period changed.

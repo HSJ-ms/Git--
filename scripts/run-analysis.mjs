@@ -25,7 +25,7 @@ async function main() {
     }
   }
   console.log(`[ok] cache -> ${result.cacheDir}`);
-  console.log(`[ok] dashboard -> ${result.dashboardPath}`);
+  console.log(`[ok] dashboard sync -> ${result.dashboardPath}`);
   console.log(`[ok] unique repos enriched -> ${result.uniqueRepoCount}`);
 }
 

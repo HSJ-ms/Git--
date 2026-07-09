@@ -1,6 +1,6 @@
 # Report Guidelines
 
-Use these rules when refining generated Markdown or HTML output.
+Use these rules when refining generated Markdown or dashboard output.
 
 ## Article Goal
 
@@ -21,6 +21,7 @@ Each report must include:
 3. `项目清单`
 
 Do not create a separate focus-only section. Show `【重点关注：...】` inline on affected project entries only, and keep the full project list unchanged.
+Treat Markdown as the source of truth. Any dashboard or secondary web presentation must mirror the same conclusions and field values.
 
 ## Repository Entry Requirements
 
@@ -92,6 +93,7 @@ For the second section, do not treat projects as isolated blurbs. Use the macro 
 - Sync the dashboard hero and trend panel with the same `整体趋势分析` results used in Markdown.
 - Emphasize focus projects with clear inline badges and dashboard chips.
 - Preserve the project-level ranking and do not remove non-focus repositories.
+- Do not invent new trend claims, labels, or project conclusions in dashboard-only rendering.
 
 ## Tone
 

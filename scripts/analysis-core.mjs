@@ -7,7 +7,7 @@ import { renderDashboardHtml } from "./dashboard/render-dashboard.mjs";
 const USER_AGENT =
   "Mozilla/5.0 (compatible; GitHubTrendingAIAnalyst/3.0; +https://github.com)";
 
-const SKILL_DIR = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
+const TOOLKIT_ROOT = path.resolve(fileURLToPath(new URL("..", import.meta.url)));
 const PERIOD_ORDER = ["daily", "weekly", "monthly"];
 
 const PERIOD_CONFIG = {
@@ -686,12 +686,12 @@ function parseArgs(argv) {
 function usage() {
   return [
     "Usage:",
-    "  node analyze-github-trending/scripts/run-analysis.mjs --period daily|weekly|monthly|all [--output-dir <dir>] [--date YYYY-MM-DD]",
+    "  node ./scripts/run-analysis.mjs --period daily|weekly|monthly|all [--output-dir <dir>] [--date YYYY-MM-DD]",
     "",
     "Outputs:",
-    "  <output-dir>/<date>-daily.md, <date>-weekly.md, <date>-monthly.md",
-    "  <output-dir>/dashboard/index.html",
+    "  <output-dir>/<date>-daily.md, <date>-weekly.md, <date>-monthly.md  (canonical reports)",
     "  <output-dir>/cache/<date>/*.json",
+    "  <output-dir>/dashboard/index.html  (synced companion view)",
   ].join("\n");
 }
 
@@ -1649,9 +1649,9 @@ function resolvePeriods(period) {
 
 async function writeDashboard({ outputDir, date, repos }) {
   const dashboardDir = path.join(outputDir, "dashboard");
-  const assetSourceDir = path.join(SKILL_DIR, "assets", "dashboard");
+  const assetSourceDir = path.join(TOOLKIT_ROOT, "assets", "dashboard");
   const assetOutputDir = path.join(dashboardDir, "assets");
-  const stylesheet = await readFile(path.join(SKILL_DIR, "assets", "dashboard", "styles.css"), "utf8");
+  const stylesheet = await readFile(path.join(TOOLKIT_ROOT, "assets", "dashboard", "styles.css"), "utf8");
   const html = renderDashboardHtml(repos, date);
 
   await mkdir(assetOutputDir, { recursive: true });

@@ -13,20 +13,20 @@ import {
 function makeRepo(overrides = {}) {
   return summarizeRepository(
     classifyRepository({
-      fullName: "openai/codex",
+      fullName: "acme/codeflow-agent",
       description: "Coding agent for software engineering workflows.",
-      readmeText: "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
-      readmeHighlight: "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
-      trendingSnippet: "coding agent openai cli software engineering",
+      readmeText: "Codeflow Agent is a coding agent that runs locally for software engineering workflows.",
+      readmeHighlight: "Codeflow Agent is a coding agent that runs locally for software engineering workflows.",
+      trendingSnippet: "coding agent local cli software engineering",
       deltaLabel: "今日新增",
       deltaStars: 1000,
       stars: 10000,
-      projectLink: "https://github.com/openai/codex",
+      projectLink: "https://github.com/acme/codeflow-agent",
       language: "Rust",
       rank: 1,
       period: "daily",
-      owner: "openai",
-      name: "codex",
+      owner: "acme",
+      name: "codeflow-agent",
       ...overrides,
     }),
   );
@@ -77,9 +77,9 @@ test("trend analysis summarizes repositories into one to two core trends", () =>
   const markdown = buildTrendAnalysis(
     [
       makeRepo({
-        fullName: "openai/codex",
+        fullName: "acme/codeflow-agent",
         description: "Coding agent for software engineering workflows.",
-        readmeText: "Codex CLI is a coding agent with MCP and workflow support.",
+        readmeText: "Codeflow Agent is a coding agent with MCP and workflow support.",
         trendingSnippet: "coding agent mcp developer workflow",
         deltaStars: 2200,
         language: "Rust",
@@ -125,7 +125,7 @@ test("daily markdown report includes required publishable project fields", () =>
   assert.match(markdown, /https:\/\/github\.com\/trending\?since=daily/);
   assert.match(markdown, /## 整体趋势分析/);
   assert.match(markdown, /🔥 核心技术趋势洞察/);
-  assert.match(markdown, /### 1\. \[openai\/codex\]/);
+  assert.match(markdown, /### 1\. \[acme\/codeflow-agent\]/);
   assert.match(markdown, /- Star：10,000/);
   assert.match(markdown, /- 今日新增：1,000/);
   assert.match(markdown, /- 项目简介：/);

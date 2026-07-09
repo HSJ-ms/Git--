@@ -36,27 +36,27 @@ async function main() {
     );
   }
 
-  const repoHtml = await fetchGithubHtml("https://github.com/openai/codex");
+  const repoHtml = await fetchGithubHtml("https://github.com/modelcontextprotocol/servers");
   const readme = extractReadmeTextFromHtml(repoHtml);
   assert.ok(readme.readmeText.length > 0, "README extraction should return text");
   assert.ok(readme.readmeSource === "overview-files", "README should come from overview files");
 
   const aiRepo = summarizeRepository(
     classifyRepository({
-      fullName: "openai/codex",
+      fullName: "acme/codeflow-agent",
       description: "Coding agent for software engineering workflows.",
-      readmeText: "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
-      readmeHighlight: "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
-      trendingSnippet: "coding agent openai cli software engineering",
+      readmeText: "Codeflow Agent is a coding agent that runs locally for software engineering workflows.",
+      readmeHighlight: "Codeflow Agent is a coding agent that runs locally for software engineering workflows.",
+      trendingSnippet: "coding agent local cli software engineering",
       deltaLabel: "本周新增",
       deltaStars: 1000,
       stars: 10000,
-      projectLink: "https://github.com/openai/codex",
+      projectLink: "https://github.com/acme/codeflow-agent",
       language: "Rust",
       rank: 1,
       period: "weekly",
-      owner: "openai",
-      name: "codex",
+      owner: "acme",
+      name: "codeflow-agent",
     }),
   );
   assert.ok(aiRepo.isFocus, "AI coding repo should be marked as focus");
@@ -89,7 +89,7 @@ async function main() {
   assert.ok(markdown.includes("【重点关注："), "markdown should show inline focus badge");
   assert.ok(markdown.includes("- 项目链接："), "markdown should include project link");
   assert.ok(markdown.includes("- 项目简介："), "markdown should include project summary");
-  assert.ok(markdown.includes("趋势名称："), "markdown should render structured trend headings");
+  assert.ok(markdown.includes("🎯 宏观 What (演进方向)："), "markdown should render structured trend headings");
   assert.ok(markdown.includes("核心关键词："), "markdown should render structured trend keywords");
 
   const outputDir = path.join(scriptDir, "..", "tmp-self-check-output");
