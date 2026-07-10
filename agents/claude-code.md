@@ -1,6 +1,6 @@
-# CLAUDE.md
+# Claude Code Instructions
 
-This repository is a generic, agent-agnostic GitHub Trending analysis toolkit, not a Codex-only project.
+This file is the canonical Claude Code entry for this skill.
 
 ## What to do here
 

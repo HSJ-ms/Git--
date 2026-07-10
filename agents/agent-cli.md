@@ -1,8 +1,10 @@
-# AGENTS.md
+# Agent CLI Instructions
+
+This file is the canonical instruction set for OpenCode and other agents that follow an `AGENTS.md`-style convention.
 
 ## Purpose
 
-This repository is a reusable, agent-agnostic GitHub Trending analysis toolkit.
+This repository is a reusable, agent-agnostic GitHub Trending analysis skill.
 
 Use it to:
 
@@ -17,7 +19,7 @@ Treat the dashboard as a synchronized presentation layer, not a second analysis 
 
 ## Primary entrypoint
 
-From the repository root, run:
+From the skill root, run:
 
 ```powershell
 node .\scripts\run-analysis.mjs --period all
@@ -77,7 +79,7 @@ Do not require provider-specific tools or Codex-only context if the same result 
 ## Important files
 
 - `README.md`
-  - general human-readable usage guide
+  - general skill overview for agents and maintainers
 - `SKILL.md`
   - Codex-specific discovery adapter; not required outside Codex
 - `references/report-guidelines.md`

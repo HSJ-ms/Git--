@@ -13,8 +13,7 @@ Treat the bundled Node script as the canonical workflow: it collects repository 
 This `SKILL.md` only adapts the toolkit to Codex skill discovery. The repository itself is agent-agnostic:
 
 - `README.md` is the primary human-facing and portable usage guide
-- `CLAUDE.md` provides Claude Code-oriented project instructions
-- `AGENTS.md` provides OpenCode and general agent-oriented instructions
+- `agents/claude-code.md` and `agents/agent-cli.md` hold the canonical non-Codex agent instructions
 - `scripts/run-analysis.mjs` is the canonical CLI entrypoint for every environment
 
 ## Workflow
@@ -28,6 +27,8 @@ This `SKILL.md` only adapts the toolkit to Codex skill discovery. The repository
 
 This toolkit is self-contained for independent publishing:
 
+- `agents/`
+  - OpenAI metadata plus non-Codex canonical agent instruction files
 - `scripts/analysis-core.mjs`
   - 主分析与报告生成逻辑
 - `scripts/dashboard/`
