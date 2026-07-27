@@ -1,0 +1,809 @@
+[
+  {
+    "period": "weekly",
+    "rank": 1,
+    "owner": "bojieli",
+    "name": "ai-agent-book",
+    "fullName": "bojieli/ai-agent-book",
+    "projectLink": "https://github.com/bojieli/ai-agent-book",
+    "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+    "language": "Python",
+    "stars": 21778,
+    "forks": 2176,
+    "deltaStars": 15909,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "bojieli",
+        "profile": "https://github.com/bojieli"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "santhreal",
+        "profile": "https://github.com/santhreal"
+      },
+      {
+        "login": "thejesh23",
+        "profile": "https://github.com/thejesh23"
+      },
+      {
+        "login": "phaethix",
+        "profile": "https://github.com/phaethix"
+      }
+    ],
+    "trendingSnippet": "Star\n\n bojieli /\n\n ai-agent-book\n\n 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码\n\n Python\n\n 21,778\n\n 2,176\n\n Built by\n\n 15,909 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 2,
+    "owner": "koala73",
+    "name": "worldmonitor",
+    "fullName": "koala73/worldmonitor",
+    "projectLink": "https://github.com/koala73/worldmonitor",
+    "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+    "language": "TypeScript",
+    "stars": 74983,
+    "forks": 11258,
+    "deltaStars": 12615,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "koala73",
+        "profile": "https://github.com/koala73"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "SebastienMelki",
+        "profile": "https://github.com/SebastienMelki"
+      },
+      {
+        "login": "NewCoder3294",
+        "profile": "https://github.com/NewCoder3294"
+      },
+      {
+        "login": "lspassos1",
+        "profile": "https://github.com/lspassos1"
+      }
+    ],
+    "trendingSnippet": "Star\n\n koala73 /\n\n worldmonitor\n\n Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\n\n TypeScript\n\n 74,983\n\n 11,258\n\n Built by\n\n 12,615 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 3,
+    "owner": "tirth8205",
+    "name": "code-review-graph",
+    "fullName": "tirth8205/code-review-graph",
+    "projectLink": "https://github.com/tirth8205/code-review-graph",
+    "description": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
+    "language": "Python",
+    "stars": 26739,
+    "forks": 2490,
+    "deltaStars": 6006,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "tirth8205",
+        "profile": "https://github.com/tirth8205"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "gzenz",
+        "profile": "https://github.com/gzenz"
+      },
+      {
+        "login": "jaissebastian",
+        "profile": "https://github.com/jaissebastian"
+      },
+      {
+        "login": "michael-denyer",
+        "profile": "https://github.com/michael-denyer"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n tirth8205 /\n\n code-review-graph\n\n Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.\n\n Python\n\n 26,739\n\n 2,490\n\n Built by\n\n 6,006 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 4,
+    "owner": "1jehuang",
+    "name": "jcode",
+    "fullName": "1jehuang/jcode",
+    "projectLink": "https://github.com/1jehuang/jcode",
+    "description": "The most RAM effiecent harness",
+    "language": "Rust",
+    "stars": 11728,
+    "forks": 1305,
+    "deltaStars": 2909,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "1jehuang",
+        "profile": "https://github.com/1jehuang"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "FabianAmherd",
+        "profile": "https://github.com/FabianAmherd"
+      },
+      {
+        "login": "hongnoul",
+        "profile": "https://github.com/hongnoul"
+      },
+      {
+        "login": "AlazBatu",
+        "profile": "https://github.com/AlazBatu"
+      }
+    ],
+    "trendingSnippet": "Star\n\n 1jehuang /\n\n jcode\n\n The most RAM effiecent harness\n\n Rust\n\n 11,728\n\n 1,305\n\n Built by\n\n 2,909 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 5,
+    "owner": "diegosouzapw",
+    "name": "OmniRoute",
+    "fullName": "diegosouzapw/OmniRoute",
+    "projectLink": "https://github.com/diegosouzapw/OmniRoute",
+    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilo...",
+    "language": "TypeScript",
+    "stars": 31394,
+    "forks": 4061,
+    "deltaStars": 10912,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "diegosouzapw",
+        "profile": "https://github.com/diegosouzapw"
+      },
+      {
+        "login": "oyi77",
+        "profile": "https://github.com/oyi77"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "rdself",
+        "profile": "https://github.com/rdself"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n diegosouzapw /\n\n OmniRoute\n\n Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors\n\n TypeScript\n\n 31,394\n\n 4,061\n\n Built by\n\n 10,912 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 6,
+    "owner": "agegr",
+    "name": "pi-web",
+    "fullName": "agegr/pi-web",
+    "projectLink": "https://github.com/agegr/pi-web",
+    "description": "Web UI for the pi coding agent",
+    "language": "TypeScript",
+    "stars": 2937,
+    "forks": 390,
+    "deltaStars": 1551,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "agegr",
+        "profile": "https://github.com/agegr"
+      },
+      {
+        "login": "Kabochar",
+        "profile": "https://github.com/Kabochar"
+      },
+      {
+        "login": "fallleave",
+        "profile": "https://github.com/fallleave"
+      },
+      {
+        "login": "zhudatou630",
+        "profile": "https://github.com/zhudatou630"
+      },
+      {
+        "login": "lifu963",
+        "profile": "https://github.com/lifu963"
+      }
+    ],
+    "trendingSnippet": "Star\n\n agegr /\n\n pi-web\n\n Web UI for the pi coding agent\n\n TypeScript\n\n 2,937\n\n 390\n\n Built by\n\n 1,551 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 7,
+    "owner": "earendil-works",
+    "name": "pi",
+    "fullName": "earendil-works/pi",
+    "projectLink": "https://github.com/earendil-works/pi",
+    "description": "AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "language": "TypeScript",
+    "stars": 78494,
+    "forks": 9657,
+    "deltaStars": 5389,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "badlogic",
+        "profile": "https://github.com/badlogic"
+      },
+      {
+        "login": "mitsuhiko",
+        "profile": "https://github.com/mitsuhiko"
+      },
+      {
+        "login": "cristinaponcela",
+        "profile": "https://github.com/cristinaponcela"
+      },
+      {
+        "login": "hjanuschka",
+        "profile": "https://github.com/hjanuschka"
+      }
+    ],
+    "trendingSnippet": "Star\n\n earendil-works /\n\n pi\n\n AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI\n\n TypeScript\n\n 78,494\n\n 9,657\n\n Built by\n\n 5,389 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 8,
+    "owner": "mattpocock",
+    "name": "skills",
+    "fullName": "mattpocock/skills",
+    "projectLink": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "language": "Shell",
+    "stars": 190258,
+    "forks": 16338,
+    "deltaStars": 12238,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "mattpocock",
+        "profile": "https://github.com/mattpocock"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "gabimoncha",
+        "profile": "https://github.com/gabimoncha"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n mattpocock /\n\n skills\n\n Skills for Real Engineers. Straight from my .agents directory.\n\n Shell\n\n 190,258\n\n 16,338\n\n Built by\n\n 12,238 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 9,
+    "owner": "ruvnet",
+    "name": "RuView",
+    "fullName": "ruvnet/RuView",
+    "projectLink": "https://github.com/ruvnet/RuView",
+    "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+    "language": "Rust",
+    "stars": 86738,
+    "forks": 11540,
+    "deltaStars": 5497,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "ruvnet",
+        "profile": "https://github.com/ruvnet"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "proffesor-for-testing",
+        "profile": "https://github.com/proffesor-for-testing"
+      }
+    ],
+    "trendingSnippet": "Star\n\n ruvnet /\n\n RuView\n\n π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.\n\n Rust\n\n 86,738\n\n 11,540\n\n Built by\n\n 5,497 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 10,
+    "owner": "rohitg00",
+    "name": "ai-engineering-from-scratch",
+    "fullName": "rohitg00/ai-engineering-from-scratch",
+    "projectLink": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "description": "Learn it. Build it. Ship it for others.",
+    "language": "Python",
+    "stars": 43947,
+    "forks": 7396,
+    "deltaStars": 4317,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "rohitg00",
+        "profile": "https://github.com/rohitg00"
+      },
+      {
+        "login": "abhinav-m22",
+        "profile": "https://github.com/abhinav-m22"
+      },
+      {
+        "login": "thereisnotime",
+        "profile": "https://github.com/thereisnotime"
+      },
+      {
+        "login": "thejesh23",
+        "profile": "https://github.com/thejesh23"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n rohitg00 /\n\n ai-engineering-from-scratch\n\n Learn it. Build it. Ship it for others.\n\n Python\n\n 43,947\n\n 7,396\n\n Built by\n\n 4,317 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 11,
+    "owner": "Pumpkin-MC",
+    "name": "Pumpkin",
+    "fullName": "Pumpkin-MC/Pumpkin",
+    "projectLink": "https://github.com/Pumpkin-MC/Pumpkin",
+    "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+    "language": "Rust",
+    "stars": 10123,
+    "forks": 677,
+    "deltaStars": 1883,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "Snowiiii",
+        "profile": "https://github.com/Snowiiii"
+      },
+      {
+        "login": "kralverde",
+        "profile": "https://github.com/kralverde"
+      },
+      {
+        "login": "Bryntet",
+        "profile": "https://github.com/Bryntet"
+      },
+      {
+        "login": "lukas0008",
+        "profile": "https://github.com/lukas0008"
+      },
+      {
+        "login": "Purdze",
+        "profile": "https://github.com/Purdze"
+      }
+    ],
+    "trendingSnippet": "Star\n\n Pumpkin-MC /\n\n Pumpkin\n\n Empowering everyone to host fast and efficient Minecraft servers.\n\n Rust\n\n 10,123\n\n 677\n\n Built by\n\n 1,883 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 12,
+    "owner": "HKUDS",
+    "name": "DeepTutor",
+    "fullName": "HKUDS/DeepTutor",
+    "projectLink": "https://github.com/HKUDS/DeepTutor",
+    "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
+    "language": "Python",
+    "stars": 30244,
+    "forks": 3980,
+    "deltaStars": 2199,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "pancacake",
+        "profile": "https://github.com/pancacake"
+      },
+      {
+        "login": "Pinkllow",
+        "profile": "https://github.com/Pinkllow"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "tusharkhatriofficial",
+        "profile": "https://github.com/tusharkhatriofficial"
+      }
+    ],
+    "trendingSnippet": "Star\n\n HKUDS /\n\n DeepTutor\n\n DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .\n\n Python\n\n 30,244\n\n 3,980\n\n Built by\n\n 2,199 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 13,
+    "owner": "MoonshotAI",
+    "name": "kimi-code",
+    "fullName": "MoonshotAI/kimi-code",
+    "projectLink": "https://github.com/MoonshotAI/kimi-code",
+    "description": "Kimi Code CLI — The Starting Point for Next-Gen Agents",
+    "language": "TypeScript",
+    "stars": 5252,
+    "forks": 772,
+    "deltaStars": 1380,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "liruifengv",
+        "profile": "https://github.com/liruifengv"
+      },
+      {
+        "login": "wbxl2000",
+        "profile": "https://github.com/wbxl2000"
+      },
+      {
+        "login": "sailist",
+        "profile": "https://github.com/sailist"
+      },
+      {
+        "login": "kermanx",
+        "profile": "https://github.com/kermanx"
+      },
+      {
+        "login": "RealKai42",
+        "profile": "https://github.com/RealKai42"
+      }
+    ],
+    "trendingSnippet": "Star\n\n MoonshotAI /\n\n kimi-code\n\n Kimi Code CLI — The Starting Point for Next-Gen Agents\n\n TypeScript\n\n 5,252\n\n 772\n\n Built by\n\n 1,380 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 14,
+    "owner": "schollz",
+    "name": "croc",
+    "fullName": "schollz/croc",
+    "projectLink": "https://github.com/schollz/croc",
+    "description": "Easily and securely send things from one computer to another 🐊 📦",
+    "language": "Go",
+    "stars": 38746,
+    "forks": 1541,
+    "deltaStars": 2993,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "schollz",
+        "profile": "https://github.com/schollz"
+      },
+      {
+        "login": "TheQueasle",
+        "profile": "https://github.com/TheQueasle"
+      },
+      {
+        "login": "stefins",
+        "profile": "https://github.com/stefins"
+      },
+      {
+        "login": "jolheiser",
+        "profile": "https://github.com/jolheiser"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n schollz /\n\n croc\n\n Easily and securely send things from one computer to another 🐊 📦\n\n Go\n\n 38,746\n\n 1,541\n\n Built by\n\n 2,993 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 15,
+    "owner": "every-app",
+    "name": "open-seo",
+    "fullName": "every-app/open-seo",
+    "projectLink": "https://github.com/every-app/open-seo",
+    "description": "Open source alternative to Semrush and Ahrefs",
+    "language": "TypeScript",
+    "stars": 8323,
+    "forks": 904,
+    "deltaStars": 3639,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "bensenescu",
+        "profile": "https://github.com/bensenescu"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "bookingseo",
+        "profile": "https://github.com/bookingseo"
+      },
+      {
+        "login": "mvanhorn",
+        "profile": "https://github.com/mvanhorn"
+      },
+      {
+        "login": "shuvamk",
+        "profile": "https://github.com/shuvamk"
+      }
+    ],
+    "trendingSnippet": "Star\n\n every-app /\n\n open-seo\n\n Open source alternative to Semrush and Ahrefs\n\n TypeScript\n\n 8,323\n\n 904\n\n Built by\n\n 3,639 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 16,
+    "owner": "Nutlope",
+    "name": "hallmark",
+    "fullName": "Nutlope/hallmark",
+    "projectLink": "https://github.com/Nutlope/hallmark",
+    "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "language": "CSS",
+    "stars": 18435,
+    "forks": 929,
+    "deltaStars": 4932,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "Luffixos",
+        "profile": "https://github.com/Luffixos"
+      },
+      {
+        "login": "Nutlope",
+        "profile": "https://github.com/Nutlope"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "riccardogiorato",
+        "profile": "https://github.com/riccardogiorato"
+      },
+      {
+        "login": "JaySmith502",
+        "profile": "https://github.com/JaySmith502"
+      }
+    ],
+    "trendingSnippet": "Star\n\n Nutlope /\n\n hallmark\n\n Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\n\n CSS\n\n 18,435\n\n 929\n\n Built by\n\n 4,932 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 17,
+    "owner": "MoonshotAI",
+    "name": "kimi-cli",
+    "fullName": "MoonshotAI/kimi-cli",
+    "projectLink": "https://github.com/MoonshotAI/kimi-cli",
+    "description": "Kimi Code CLI is your next CLI agent.",
+    "language": "Python",
+    "stars": 10924,
+    "forks": 1257,
+    "deltaStars": 1200,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "stdrc",
+        "profile": "https://github.com/stdrc"
+      },
+      {
+        "login": "RealKai42",
+        "profile": "https://github.com/RealKai42"
+      },
+      {
+        "login": "xxchan",
+        "profile": "https://github.com/xxchan"
+      },
+      {
+        "login": "n-WN",
+        "profile": "https://github.com/n-WN"
+      }
+    ],
+    "trendingSnippet": "Star\n\n MoonshotAI /\n\n kimi-cli\n\n Kimi Code CLI is your next CLI agent.\n\n Python\n\n 10,924\n\n 1,257\n\n Built by\n\n 1,200 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 18,
+    "owner": "stablyai",
+    "name": "orca",
+    "fullName": "stablyai/orca",
+    "projectLink": "https://github.com/stablyai/orca",
+    "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
+    "language": "TypeScript",
+    "stars": 30128,
+    "forks": 2128,
+    "deltaStars": 7392,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "nwparker",
+        "profile": "https://github.com/nwparker"
+      },
+      {
+        "login": "orca-ide",
+        "profile": "https://github.com/orca-ide"
+      },
+      {
+        "login": "AmethystLiang",
+        "profile": "https://github.com/AmethystLiang"
+      },
+      {
+        "login": "Jinwoo-H",
+        "profile": "https://github.com/Jinwoo-H"
+      },
+      {
+        "login": "brennanb2025",
+        "profile": "https://github.com/brennanb2025"
+      }
+    ],
+    "trendingSnippet": "Star\n\n stablyai /\n\n orca\n\n Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.\n\n TypeScript\n\n 30,128\n\n 2,128\n\n Built by\n\n 7,392 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 19,
+    "owner": "shiyu-coder",
+    "name": "Kronos",
+    "fullName": "shiyu-coder/Kronos",
+    "projectLink": "https://github.com/shiyu-coder/Kronos",
+    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "language": "Python",
+    "stars": 34297,
+    "forks": 5772,
+    "deltaStars": 1768,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "shiyu-coder",
+        "profile": "https://github.com/shiyu-coder"
+      },
+      {
+        "login": "Luciferbobo",
+        "profile": "https://github.com/Luciferbobo"
+      },
+      {
+        "login": "CharlesJ-ABu",
+        "profile": "https://github.com/CharlesJ-ABu"
+      },
+      {
+        "login": "AnMakc",
+        "profile": "https://github.com/AnMakc"
+      },
+      {
+        "login": "randyy179",
+        "profile": "https://github.com/randyy179"
+      }
+    ],
+    "trendingSnippet": "Star\n\n shiyu-coder /\n\n Kronos\n\n Kronos: A Foundation Model for the Language of Financial Markets\n\n Python\n\n 34,297\n\n 5,772\n\n Built by\n\n 1,768 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 20,
+    "owner": "earthtojake",
+    "name": "text-to-cad",
+    "fullName": "earthtojake/text-to-cad",
+    "projectLink": "https://github.com/earthtojake/text-to-cad",
+    "description": "A collection of agent skills for CAD, robotics and hardware design",
+    "language": "JavaScript",
+    "stars": 10663,
+    "forks": 1160,
+    "deltaStars": 2169,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "earthtojake",
+        "profile": "https://github.com/earthtojake"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "arronzhang",
+        "profile": "https://github.com/arronzhang"
+      },
+      {
+        "login": "vasco3",
+        "profile": "https://github.com/vasco3"
+      }
+    ],
+    "trendingSnippet": "Star\n\n earthtojake /\n\n text-to-cad\n\n A collection of agent skills for CAD, robotics and hardware design\n\n JavaScript\n\n 10,663\n\n 1,160\n\n Built by\n\n 2,169 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 21,
+    "owner": "CoreBunch",
+    "name": "Instatic",
+    "fullName": "CoreBunch/Instatic",
+    "projectLink": "https://github.com/CoreBunch/Instatic",
+    "description": "The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.",
+    "language": "TypeScript",
+    "stars": 5882,
+    "forks": 527,
+    "deltaStars": 1893,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "DavidBabinec",
+        "profile": "https://github.com/DavidBabinec"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "RemiAsselin42",
+        "profile": "https://github.com/RemiAsselin42"
+      },
+      {
+        "login": "hrq-chiuchi",
+        "profile": "https://github.com/hrq-chiuchi"
+      },
+      {
+        "login": "mvanhorn",
+        "profile": "https://github.com/mvanhorn"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n CoreBunch /\n\n Instatic\n\n The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.\n\n TypeScript\n\n 5,882\n\n 527\n\n Built by\n\n 1,893 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 22,
+    "owner": "ComposioHQ",
+    "name": "awesome-claude-skills",
+    "fullName": "ComposioHQ/awesome-claude-skills",
+    "projectLink": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "language": "Python",
+    "stars": 70984,
+    "forks": 7960,
+    "deltaStars": 2820,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "Prat011",
+        "profile": "https://github.com/Prat011"
+      },
+      {
+        "login": "sohamganatra",
+        "profile": "https://github.com/sohamganatra"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "sanjay3290",
+        "profile": "https://github.com/sanjay3290"
+      },
+      {
+        "login": "mellson",
+        "profile": "https://github.com/mellson"
+      }
+    ],
+    "trendingSnippet": "Star\n\n ComposioHQ /\n\n awesome-claude-skills\n\n A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows\n\n Python\n\n 70,984\n\n 7,960\n\n Built by\n\n 2,820 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 23,
+    "owner": "pingdotgg",
+    "name": "t3code",
+    "fullName": "pingdotgg/t3code",
+    "projectLink": "https://github.com/pingdotgg/t3code",
+    "description": "",
+    "language": "TypeScript",
+    "stars": 15155,
+    "forks": 3315,
+    "deltaStars": 793,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "juliusmarminge",
+        "profile": "https://github.com/juliusmarminge"
+      },
+      {
+        "login": "codex",
+        "profile": "https://github.com/codex"
+      },
+      {
+        "login": "t3dotgg",
+        "profile": "https://github.com/t3dotgg"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "cursoragent",
+        "profile": "https://github.com/cursoragent"
+      }
+    ],
+    "trendingSnippet": "Star\n\n pingdotgg /\n\n t3code\n\n TypeScript\n\n 15,155\n\n 3,315\n\n Built by\n\n 793 stars this week"
+  }
+]

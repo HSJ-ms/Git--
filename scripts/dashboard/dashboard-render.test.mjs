@@ -55,6 +55,17 @@ const repositories = [
     focusLabels: ["AI 软件开发/代码自动化"],
     themes: ["AI 编程与开发自动化"],
     readmeHighlight: "Multi-agent task execution for product teams.",
+    analysis: {
+      oneLineSummary: "多智能体研发工作流，把任务拆解、上下文共享与交付执行串起来",
+      what: "帮助产品团队协同完成开发任务的多智能体工具",
+      how: "通过多 Agent 编排、上下文共享和工具调用推进研发任务",
+      coreHighlights: [
+        "支持多 Agent 协作与任务拆解",
+        "共享项目上下文并保持执行连续性",
+        "接入研发工具链形成交付闭环",
+      ],
+      insightText: "多智能体研发工作流，把任务拆解、上下文共享与交付执行串起来",
+    },
     trendAnalysis: {
       overview: "榜单热度正在向真实研发场景中的工程化能力收敛。",
       risk: "如果只做工作流包装，缺少上下文与验证闭环，价值会被高估。",
@@ -130,7 +141,8 @@ test("dashboard renders single-column cards with meta row and core value lines",
   assert.match(html, /宏观 How：/);
   assert.match(html, /代表项目：/);
   assert.match(html, /class="deep-list"/);
-  assert.match(html, /AI Insight/);
+  assert.match(html, /一句话读懂/);
+  assert.doesNotMatch(html, /AI Insight/);
   assert.match(html, /class="meta-row"/);
   assert.match(html, /<span class="meta-label">Star<\/span>/);
   assert.match(html, /<strong class="meta-value">18\.2k \+ 7\.2k<\/strong>/);
@@ -138,9 +150,65 @@ test("dashboard renders single-column cards with meta row and core value lines",
   assert.match(html, /<span class="meta-label">Language<\/span>/);
   assert.match(html, /class="deep-card"[\s\S]*class="insight-panel"[\s\S]*class="meta-row"[\s\S]*class="core-value-panel"/);
   assert.match(html, /<span class="core-value-label">核心价值<\/span>/);
+  assert.match(html, /class="core-value-list"/);
+  assert.match(html, /class="highlight-list"/);
   assert.doesNotMatch(html, /class="deep-side"/);
   assert.doesNotMatch(html, /Theme:/);
-  assert.match(html, /它是做什么的：acme\/super-agent 是一个帮助产品团队协同完成开发任务的多智能体工具/);
-  assert.match(html, /解决了什么具体场景问题：它主要解决任务拆解、上下文共享和多角色协作效率问题/);
-  assert.match(html, /它为什么会火：它切中了让产品团队更快落地多代理协作的需求，它在本期以本周新增7,200 Star 体现出社区关注度/);
+  assert.match(html, /<strong class="core-value-key">what<\/strong>/);
+  assert.match(html, /帮助产品团队协同完成开发任务的多智能体工具/);
+  assert.match(html, /<strong class="core-value-key">how<\/strong>/);
+  assert.match(html, /通过多 Agent 编排、上下文共享和工具调用推进研发任务/);
+  assert.match(html, /<strong class="core-value-key">why<\/strong>/);
+  assert.match(html, /支持多 Agent 协作与任务拆解/);
+  assert.match(html, /共享项目上下文并保持执行连续性/);
+  assert.match(html, /接入研发工具链形成交付闭环/);
+  assert.doesNotMatch(html, /它是做什么的：/);
+  assert.doesNotMatch(html, /解决了什么具体场景问题：/);
+  assert.doesNotMatch(html, /它为什么会火：/);
+});
+
+
+test("dashboard renders period-aware historical snapshot selectors", () => {
+  const html = renderDashboardHtml(repositories, "2026-07-27", {
+    currentDate: "2026-07-27",
+    snapshotMetadata: [
+      { date: "2026-06-30", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-20", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-21", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-27", periods: ["daily", "weekly", "monthly"] },
+    ],
+  });
+
+  assert.match(html, /Archive Browser/);
+  assert.match(html, /按时间加载历史榜单/);
+  assert.match(html, /data-date-control="daily"/);
+  assert.match(html, /data-date-control="weekly"/);
+  assert.match(html, /data-date-control="monthly"/);
+  assert.match(html, /\.\/history\/2026-07-21\.html\?period=daily/);
+  assert.match(html, /2026 年第 31 周 · 07\/27–08\/02/);
+  assert.match(html, /\.\/history\/2026-07-21\.html\?period=weekly/);
+  assert.match(html, /2026 年 7 月/);
+  assert.match(html, /\.\/history\/2026-07-27\.html\?period=monthly/);
+  assert.match(html, /new URLSearchParams\(window\.location\.search\)/);
+  assert.match(html, /window\.location\.href = select\.value/);
+  assert.match(html, /data-lead-name=/);
+  assert.match(html, /data-lead-growth=/);
+  assert.match(html, /data-snapshot-date="2026-07-27"/);
+});
+
+test("historical dashboard pages resolve styles, assets, and sibling snapshots relatively", () => {
+  const html = renderDashboardHtml(repositories, "2026-07-27", {
+    currentDate: "2026-07-27",
+    snapshotMetadata: [
+      { date: "2026-07-20", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-27", periods: ["daily", "weekly", "monthly"] },
+    ],
+    assetBase: "../assets",
+    stylesheetHref: "../styles.css",
+    historyPathPrefix: "./",
+  });
+
+  assert.match(html, /href="\.\.\/styles\.css"/);
+  assert.match(html, /src="\.\.\/assets\/hero-background-281466\.png"/);
+  assert.match(html, /value="\.\/2026-07-20\.html\?period=daily"/);
 });

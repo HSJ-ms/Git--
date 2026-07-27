@@ -160,6 +160,104 @@ a {
   font-size: 13px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.snapshot-toolbar {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(123, 219, 128, 0.08), transparent 45%),
+    linear-gradient(180deg, rgba(22, 27, 34, 0.96), rgba(10, 14, 20, 0.96));
+  box-shadow: var(--shadow);
+}
+
+.snapshot-toolbar-heading span,
+.date-control-copy span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.snapshot-toolbar-heading strong {
+  font-size: 18px;
+}
+
+.date-control {
+  display: none;
+  grid-template-columns: minmax(116px, auto) minmax(240px, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.date-control.is-active {
+  display: grid;
+}
+
+.date-control-copy strong {
+  font-size: 14px;
+}
+
+.date-select-wrap {
+  position: relative;
+  display: block;
+}
+
+.date-select-wrap::after {
+  content: "⌄";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  color: var(--accent);
+  pointer-events: none;
+  transform: translateY(-58%);
+}
+
+.date-select-wrap select {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 42px 9px 13px;
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  outline: none;
+  appearance: none;
+  background: #0d1218;
+  color: var(--text);
+  font: 500 14px/1.4 "Inter", "PingFang SC", sans-serif;
+  cursor: pointer;
+}
+
+.date-select-wrap select:hover,
+.date-select-wrap select:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.archive-count {
+  color: var(--muted);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
 .period-panel {
   display: none;
 }
@@ -470,6 +568,37 @@ a {
   margin-top: 10px;
 }
 
+.core-value-list {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #becaba;
+}
+
+.core-value-item {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  line-height: 1.65;
+}
+
+.core-value-key {
+  color: var(--accent);
+  font: 700 12px/1.6 "JetBrains Mono", monospace;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
+}
+
+.highlight-list {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 20px;
+}
+
 .core-value-panel {
   padding: 18px 18px 18px 20px;
   border: 1px solid var(--line);
@@ -512,6 +641,10 @@ a {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .snapshot-toolbar {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 720px) {
@@ -527,6 +660,19 @@ a {
 
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+
+  .snapshot-toolbar {
+    padding: 16px;
+  }
+
+  .date-control.is-active {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .archive-count {
+    white-space: normal;
   }
 
   .hero-card,

@@ -1,16 +1,17 @@
 # analyze-github-trending
 
-`analyze-github-trending` 是一个面向 Agent CLI 的 GitHub Trending 分析 skill，用来抓取 `Daily / Weekly / Monthly` 榜单，补充 README 语义信息，生成可发布的中文 Markdown 报告，并同步输出 dashboard 页面。
+`analyze-github-trending` 是一个面向 Agent CLI 的 GitHub Trending 分析 skill，可按用户指令单独或组合抓取 `Daily / Weekly / Monthly` 榜单，补充 README 语义信息，生成对应的中文 Markdown 报告，并同步输出 dashboard 页面。
 
 这个目录的核心定位不是“给人手动点击运行的脚本仓库”，而是“给 agent 读取、理解并执行的技能包”。不同 Agent CLI 通过各自的入口文件触发同一套分析规则，真正的执行层由目录中的 Node.js 脚本承担。
 
 ## 它能做什么
 
 - 抓取 GitHub Trending 项目列表与基础指标
+- 可根据用户指令单独分析每日、每周或每月，也可任意组合两个或三个周期；只生成被选择的报告
 - 扫描项目描述、Trending 摘要和 README 关键信息
 - 为项目打上 `Agent`、`AI Coding`、`MCP`、`RAG`、`安全`、`多模态` 等标签
 - 输出严格遵循 `What / Why / How` 的宏观趋势分析
-- 为每个项目生成带“时代背景”的 `AI Insight`
+- 为每个项目生成中文 `一句话读懂`，并输出 `what / how / why` 核心价值解读
 - 生成 dashboard 所需的数据和静态页面
 
 ## Skill 入口
@@ -30,19 +31,22 @@
 
 ## 输出内容
 
-agent 触发 skill 后，默认会生成以下产物：
+agent 触发 skill 后，只为用户指定的周期生成对应 Markdown；未指定周期时默认生成全部三个周期：
 
-- `reports/github-trending/<date>-daily.md`
-- `reports/github-trending/<date>-weekly.md`
-- `reports/github-trending/<date>-monthly.md`
+- `reports/github-trending/<date>-daily.md`（选择每日时）
+- `reports/github-trending/<date>-weekly.md`（选择每周时）
+- `reports/github-trending/<date>-monthly.md`（选择每月时）
 - `reports/github-trending/cache/<date>/`
 - `reports/github-trending/dashboard/index.html`
+- `reports/github-trending/dashboard/history/<date>.html`
 
 其中：
 
 - Markdown 报告是主产物，也是对外发布时的权威内容
-- `cache/<date>/` 是中间结构化数据，方便调试、复核与二次处理
+- `cache/<date>/` 是中间结构化数据，方便调试、复核与二次处理；同一天分批运行不同周期时，新结果替换所选周期，其他周期缓存继续保留
 - dashboard 页面是和 Markdown 同步的 Web 展示层，不应引入额外结论
+- dashboard 会扫描已有 `cache/<date>/enriched-repositories.json`：日报按日期切换，周报按 ISO 周切换，月报按自然月切换；每个周期默认使用该时间桶内最新的可用快照
+- `dashboard/index.html` 默认打开最新快照，`dashboard/history/<date>.html` 是可直接通过 `file://` 打开的静态历史页，不依赖额外服务或异步请求
 
 报告中的趋势部分会输出：
 
@@ -56,11 +60,11 @@ agent 触发 skill 后，默认会生成以下产物：
 
 项目部分会输出：
 
-- `项目简介`
-- `解决场景`
-- `技术亮点`
-- `为什么会火`
-- `AI Insight`
+- `一句话读懂`
+- `核心价值`
+  - `what`：项目是什么
+  - `how`：项目如何解决目标场景问题
+  - `why`：三个基于 README 证据提炼的核心亮点
 
 ## Skill 目录结构
 
@@ -113,6 +117,24 @@ node .\scripts\run-analysis.mjs --period weekly
 node .\scripts\run-analysis.mjs --period monthly
 ```
 
+如果用户指定两个或三个周期，则按需组合，不补充用户没有要求的周期：
+
+```powershell
+# 每日 + 每周
+node .\scripts\run-analysis.mjs --period "daily,weekly"
+
+# 每周 + 每月
+node .\scripts\run-analysis.mjs --period "weekly,monthly"
+
+# 每日 + 每月
+node .\scripts\run-analysis.mjs --period "daily,monthly"
+
+# 每日 + 每周 + 每月
+node .\scripts\run-analysis.mjs --period "daily,weekly,monthly"
+```
+
+也可以重复传入参数，例如 `--period daily --period weekly`。推荐 agent 使用逗号分隔形式。周期会自动去重，并固定按 `daily → weekly → monthly` 顺序执行。用户未指定周期时，默认分析全部三个周期。
+
 如果 skill 目录被其他仓库以子目录方式引用，例如 `./analyze-github-trending/`，agent 应自行调整脚本路径，例如：
 
 ```powershell
@@ -131,6 +153,8 @@ node .\scripts\run-analysis.mjs --period all --output-dir ..\reports\github-tren
 - `README.md` 与 `agents/` 目录只负责适配不同 Agent CLI 的读取入口，不改变核心执行链路
 - `scripts/analysis-core.mjs` 与 `references/report-guidelines.md` 才是趋势分析逻辑与输出约束的真实来源
 - dashboard 必须复用与 Markdown 相同的趋势结论和项目分析，不得产生两套独立口径
+- dashboard 的日期导航必须从缓存快照构建：日报按天、周报按 ISO 周、月报按自然月聚合，并跳转到对应静态历史页
+- agent 应把中文周期指令精确映射为参数：`每日 → daily`、`每周 → weekly`、`每月 → monthly`；组合请求只运行所列周期，未指定时才默认 `all`
 - agent 应优先把它当作 skill 使用；手动执行脚本只是维护、调试或独立集成时的次级路径
 
 ## Agent 使用约定

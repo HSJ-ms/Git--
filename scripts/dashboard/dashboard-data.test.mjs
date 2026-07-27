@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 
 import {
   buildDashboardModel,
+  buildDashboardNavigation,
   formatCompactNumber,
   formatStarsThisPeriod,
 } from "./dashboard-data.mjs";
@@ -59,6 +60,17 @@ const sampleRepositories = [
     focusLabels: ["AI 软件开发/代码自动化"],
     themes: ["AI 编程与开发自动化"],
     readmeHighlight: "Multi-agent task execution for product teams.",
+    analysis: {
+      oneLineSummary: "多智能体研发工作流，把任务拆解、上下文共享与交付执行串起来",
+      what: "帮助产品团队协同完成开发任务的多智能体工具",
+      how: "通过多 Agent 编排、上下文共享和工具调用推进研发任务",
+      coreHighlights: [
+        "支持多 Agent 协作与任务拆解",
+        "共享项目上下文并保持执行连续性",
+        "接入研发工具链形成交付闭环",
+      ],
+      insightText: "多智能体研发工作流，把任务拆解、上下文共享与交付执行串起来",
+    },
     trendAnalysis: {
       overview: "榜单热度正在收敛到真实研发流程中的 AI 工程化能力。",
       risk: "如果缺少仓库级上下文和执行验证，工程化叙事会被高估。",
@@ -285,23 +297,35 @@ test("buildDashboardModel prioritizes focus repositories in the deep dive cards"
     weeklyCards.map((card) => card.fullName),
     ["acme/super-agent", "acme/rust-infra", "acme/agent-notes", "acme/plain-trending"],
   );
-  assert.equal(weeklyCards[0].insightLabel, "AI Insight");
+  assert.equal(weeklyCards[0].insightLabel, "一句话读懂");
   assert.equal(weeklyCards[0].categoryChip, "AI Coding");
   assert.equal(weeklyCards[0].starsThisPeriod, "7.2k stars this week");
   assert.equal(
     weeklyCards[0].insightText,
-    sampleRepositories[1].summary,
+    sampleRepositories[1].analysis.oneLineSummary,
   );
-  assert.equal(weeklyCards[3].insightLabel, "Momentum Signal");
+  assert.equal(weeklyCards[3].insightLabel, "一句话读懂");
   assert.deepEqual(weeklyCards[0].metaItems, [
     { label: "Star", value: "18.2k + 7.2k" },
     { label: "Fork", value: "2.4k" },
     { label: "Language", value: "TypeScript" },
   ]);
+  assert.deepEqual(weeklyCards[0].coreValueItems, [
+    { label: "what", text: "帮助产品团队协同完成开发任务的多智能体工具" },
+    { label: "how", text: "通过多 Agent 编排、上下文共享和工具调用推进研发任务" },
+    {
+      label: "why",
+      highlights: [
+        "支持多 Agent 协作与任务拆解",
+        "共享项目上下文并保持执行连续性",
+        "接入研发工具链形成交付闭环",
+      ],
+    },
+  ]);
   assert.deepEqual(weeklyCards[0].coreValueLines, [
-    "它是做什么的：acme/super-agent 是一个帮助产品团队协同完成开发任务的多智能体工具",
-    "解决了什么具体场景问题：它主要解决任务拆解、上下文共享和多角色协作效率问题",
-    "它为什么会火：它切中了让产品团队更快落地多代理协作的需求，它在本期以本周新增7,200 Star 体现出社区关注度",
+    "what：帮助产品团队协同完成开发任务的多智能体工具",
+    "how：通过多 Agent 编排、上下文共享和工具调用推进研发任务",
+    "why：1）支持多 Agent 协作与任务拆解；2）共享项目上下文并保持执行连续性；3）接入研发工具链形成交付闭环",
   ]);
 });
 
@@ -329,11 +353,10 @@ test("buildDashboardModel falls back to repo signals when summary is missing", (
     "2026-07-02",
   );
 
-  assert.deepEqual(model.periods.daily.deepDive[0].coreValueLines, [
-    "它是做什么的：Shared incident automation for ops teams",
-    "解决了什么具体场景问题：它主要解决团队在Automates incident triage and response runbooks这类场景下，信息分散、流程割裂或执行成本偏高的问题",
-    "它为什么会火：它同时命中重点关注方向，并在本期拿到今日新增430 Star；同时它的价值主张“Automates incident triage and response runbooks”足够直接，容易被开发者快速理解和传播",
-  ]);
+  const fallbackCard = model.periods.daily.deepDive[0];
+  assert.deepEqual(fallbackCard.coreValueItems.map((item) => item.label), ["what", "how", "why"]);
+  assert.equal(fallbackCard.coreValueItems[2].highlights.length, 3);
+  assert.equal(fallbackCard.insightLabel, "一句话读懂");
 });
 
 test("formatters keep dashboard metrics readable", () => {
@@ -341,4 +364,59 @@ test("formatters keep dashboard metrics readable", () => {
   assert.equal(formatCompactNumber(7200), "7.2k");
   assert.equal(formatCompactNumber(1265000), "1.3M");
   assert.equal(formatStarsThisPeriod(26100, "month"), "26.1k stars this month");
+});
+
+
+test("buildDashboardNavigation groups snapshots by day, ISO week, and month", () => {
+  const navigation = buildDashboardNavigation(
+    [
+      { date: "2026-06-30", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-20", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-21", periods: ["daily", "weekly", "monthly"] },
+      { date: "2026-07-27", periods: ["daily", "weekly", "monthly"] },
+    ],
+    "2026-07-27",
+  );
+
+  assert.deepEqual(
+    navigation.dateOptions.daily.map((option) => option.date),
+    ["2026-07-27", "2026-07-21", "2026-07-20", "2026-06-30"],
+  );
+  assert.deepEqual(
+    navigation.dateOptions.weekly.map((option) => [option.key, option.date]),
+    [
+      ["2026-W31", "2026-07-27"],
+      ["2026-W30", "2026-07-21"],
+      ["2026-W27", "2026-06-30"],
+    ],
+  );
+  assert.equal(navigation.dateOptions.weekly[0].label, "2026 年第 31 周 · 07/27–08/02");
+  assert.deepEqual(
+    navigation.dateOptions.monthly.map((option) => [option.label, option.date]),
+    [
+      ["2026 年 7 月", "2026-07-27"],
+      ["2026 年 6 月", "2026-06-30"],
+    ],
+  );
+  assert.deepEqual(navigation.selectedBuckets, {
+    daily: "2026-07-27",
+    weekly: "2026-W31",
+    monthly: "2026-07",
+  });
+});
+
+test("buildDashboardNavigation keeps the latest snapshot available in each period bucket", () => {
+  const navigation = buildDashboardNavigation(
+    [
+      { date: "2026-07-20", periods: ["daily", "weekly"] },
+      { date: "2026-07-21", periods: ["daily"] },
+      { date: "2026-07-22", periods: ["weekly", "monthly"] },
+    ],
+    "2026-07-22",
+  );
+
+  assert.equal(navigation.dateOptions.daily[0].date, "2026-07-21");
+  assert.equal(navigation.dateOptions.weekly[0].date, "2026-07-22");
+  assert.equal(navigation.dateOptions.monthly[0].date, "2026-07-22");
+  assert.deepEqual(navigation.periodOrder, ["daily", "weekly", "monthly"]);
 });

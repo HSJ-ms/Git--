@@ -8,13 +8,15 @@ Write Chinese articles that can be published externally without additional restr
 
 ## Required Reports
 
-Generate three separate Markdown reports when running the full workflow:
+Generate one Markdown report for each period explicitly selected by the user. Map `每日 → daily`, `每周 → weekly`, and `每月 → monthly`; support any one-period, two-period, or three-period combination. Do not generate an unrequested period. If no period is specified, run the full workflow and generate:
 
 1. `GitHub Trending 日报`
 2. `GitHub Trending 周报`
 3. `GitHub Trending 月报`
 
-Each report must include:
+Deduplicate period requests and execute them in canonical order `daily → weekly → monthly`. When the same report date is run in multiple batches, replace the selected periods in the enriched cache and preserve the other periods for Dashboard continuity.
+
+Each generated report must include:
 
 1. Title with period and date
 2. `整体趋势分析`
@@ -31,19 +33,18 @@ Every repository entry must include:
 - project link
 - `Star`
 - period delta: `今日新增`, `本周新增`, or `本月新增`
-- `项目简介`
-- `解决场景`
-- `技术亮点`
-- `为什么会火`
-- `AI Insight`
+- `一句话读懂`
+- `核心价值`
+  - `what`: 项目是什么
+  - `how`: 项目如何解决目标场景问题
+  - `why`: 三个基于 README 证据提炼的核心亮点
 
-The repository analysis should stay compact and publish-ready. Write it in Chinese and answer:
+The repository analysis should stay compact and publish-ready. Write it in Chinese and follow these rules:
 
-- 项目是什么
-- 项目在什么具体场景下解决问题
-- 项目的技术亮点是什么
-- 项目为什么会火
-- 它是否印证了本期宏观趋势
+- `一句话读懂` 必须用一句直接、易懂的中文提炼项目，不复述 Star 增量或宏观趋势。
+- `what` 必须说明项目类别与主要功能。
+- `how` 必须说明实现路径或工作流，而不是只重复痛点。
+- `why` 必须且只能输出三个具体亮点，优先使用支持语言数、MCP 工具、架构分析、PoC、CI/CD、部署模式和效率收益等 README 证据。
 
 ## Overall Trend Analysis Rules
 
@@ -71,25 +72,27 @@ Use this logic:
      - `⚠️ 潜在风险与冷思考`
    - 语言保持客观、专业、精炼，归纳必须锚定输入项目数据。
 
-## AI Insight Routing Rules
+## Project Analysis Rules
 
-For the second section, do not treat projects as isolated blurbs. Use the macro trend result as the background layer for each repository.
+Treat the repository description and rendered README as the evidence layer for every project card.
 
-1. `Macro-Synthesis`
-   - Take the macro trend conclusion as the period's “时代背景”.
-2. `Dynamic Routing`
-   - Route the micro analysis focus according to the matched macro trend.
-   - `AI Agent 工业化` 优先看：自主性、工具调用、多阶段编排、长期记忆。
-   - `AI 编程增强` 优先看：上下文管理、RAG 检索增强、代码架构理解、仓库级索引。
-   - `模型平台化` 优先看：统一协议、推理网关、成本控制、部署运维。
-3. `Micro-Validation`
-   - If the project aligns with the macro trend, explicitly say how it validates or supports that trend.
-   - If the project does not align with the macro trend, do not force a validation claim.
+1. `One-Line Synthesis`
+   - 提炼目标用户或系统、核心机制与实际收益。
+   - 保持一句话，不堆叠无证据的宣传词。
+2. `Core Value`
+   - `what` 回答“它是什么、做什么”。
+   - `how` 回答“它通过什么机制解决场景问题”。
+   - `why` 固定输出三个能力亮点，不再输出“为什么会火”的热度推测。
+3. `Cross-Output Consistency`
+   - 日报、周报、月报与 Dashboard 必须复用相同的 `一句话读懂`、`what`、`how`、`why` 内容。
+   - Dashboard 的字段名必须直接显示为 `what`、`how`、`why`。
 
 ## Dashboard Direction
 
 - Generate a webpage in the bundled `analyze-github-trending/assets/dashboard/` dark information-board style.
 - Show tabs for daily, weekly, and monthly when all periods are available.
+- Build the archive browser from cached enriched snapshots. Daily navigation lists each date, weekly navigation groups by ISO week, and monthly navigation groups by calendar month.
+- Generate `dashboard/history/<date>.html` as self-contained static views so history switching also works when the dashboard is opened directly with `file://`.
 - Sync the dashboard hero and trend panel with the same `整体趋势分析` results used in Markdown.
 - Emphasize focus projects with clear inline badges and dashboard chips.
 - Preserve the project-level ranking and do not remove non-focus repositories.

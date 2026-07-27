@@ -62,9 +62,12 @@ function splitSummarySections(summary) {
   const text = String(summary || "").trim();
   if (!text) {
     return {
+      oneLine: "",
       what: "",
-      why: "",
+      how: "",
       problem: "",
+      why: "",
+      highlights: [],
     };
   }
 
@@ -83,15 +86,28 @@ function splitSummarySections(summary) {
     return text.slice(contentStart, end === undefined ? text.length : end).trim().replace(/[。]+$/u, "");
   };
 
+  const oneLine = extract("一句话读懂", ["what", "how", "why"]);
+  const what = extract("what", ["how", "why"]) || extract("是什么", ["解决什么问题", "为什么值得被记住"]);
+  const how = extract("how", ["why"]) || extract("解决什么问题", ["为什么值得被记住"]);
+  const why = extract("why", []) || extract("为什么值得被记住", []);
+  const highlights = [...why.matchAll(/(?:^|；)\s*\d+[）.)]\s*([^；。]+)/gu)].map((match) => match[1].trim());
+
   return {
-    what: extract("是什么", ["解决什么问题", "为什么值得被记住"]),
-    problem: extract("解决什么问题", ["为什么值得被记住"]),
-    why: extract("为什么值得被记住", []),
+    oneLine,
+    what,
+    how,
+    problem: how,
+    why,
+    highlights,
   };
 }
 
 function normalizeAnalysis(repository) {
   return repository.analysis || {
+    oneLineSummary: "",
+    what: "",
+    how: "",
+    coreHighlights: [],
     projectIntro: "",
     problemScenario: "",
     technicalHighlight: "",
@@ -243,13 +259,37 @@ function buildDeepDive(repositories, meta) {
       const summaryParts = splitSummarySections(repository.summary);
       const analysis = normalizeAnalysis(repository);
 
+      const what = analysis.what || analysis.projectIntro || buildWhatLine(repository, summaryParts);
+      const how = analysis.how || analysis.problemScenario || buildProblemLine(repository, summaryParts);
+      const coreHighlights = (analysis.coreHighlights || summaryParts.highlights || []).slice(0, 3);
+      const fallbackHighlights = [
+        analysis.technicalHighlight,
+        repository.readmeHighlight,
+        buildWhyLine(repository, summaryParts, meta),
+      ]
+        .map(cleanSentence)
+        .filter(Boolean);
+
+      for (const fallback of fallbackHighlights) {
+        if (coreHighlights.length >= 3) {
+          break;
+        }
+        if (!coreHighlights.includes(fallback)) {
+          coreHighlights.push(fallback);
+        }
+      }
+
+      while (coreHighlights.length < 3) {
+        coreHighlights.push("提供清晰、可复用的工程能力");
+      }
+
       return {
         fullName: repository.fullName,
         projectLink: repository.projectLink,
         description: repository.description,
-        insightLabel: repository.isFocus ? "AI Insight" : "Momentum Signal",
+        insightLabel: "一句话读懂",
         insightText:
-          analysis.insightText || repository.summary || repository.readmeHighlight || repository.description,
+          analysis.oneLineSummary || summaryParts.oneLine || analysis.insightText || repository.description || repository.fullName,
         categoryChip,
         language: normalizeLanguage(repository.language),
         stars: repository.stars,
@@ -264,10 +304,15 @@ function buildDeepDive(repositories, meta) {
           { label: "Fork", value: formatCompactNumber(repository.forks ?? 0) },
           { label: "Language", value: normalizeLanguage(repository.language) },
         ],
+        coreValueItems: [
+          { label: "what", text: what },
+          { label: "how", text: how },
+          { label: "why", highlights: coreHighlights },
+        ],
         coreValueLines: [
-          `它是做什么的：${analysis.projectIntro || buildWhatLine(repository, summaryParts)}`,
-          `解决了什么具体场景问题：${analysis.problemScenario || buildProblemLine(repository, summaryParts)}`,
-          `它为什么会火：${analysis.whyHot || buildWhyLine(repository, summaryParts, meta)}`,
+          `what：${what}`,
+          `how：${how}`,
+          `why：${coreHighlights.map((item, index) => `${index + 1}）${item}`).join("；")}`,
         ],
       };
     });
@@ -328,6 +373,130 @@ function buildPeriodSummary(period, repositories) {
   return summary;
 }
 
+function parseDateKey(value) {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})$/u);
+  if (!match) {
+    return null;
+  }
+
+  const year = Number(match[1]);
+  const month = Number(match[2]);
+  const day = Number(match[3]);
+  const date = new Date(Date.UTC(year, month - 1, day));
+
+  if (
+    date.getUTCFullYear() !== year ||
+    date.getUTCMonth() !== month - 1 ||
+    date.getUTCDate() !== day
+  ) {
+    return null;
+  }
+
+  return date;
+}
+
+function formatMonthDay(date) {
+  return `${String(date.getUTCMonth() + 1).padStart(2, "0")}/${String(date.getUTCDate()).padStart(2, "0")}`;
+}
+
+function getIsoWeekInfo(dateKey) {
+  const date = parseDateKey(dateKey);
+  if (!date) {
+    return null;
+  }
+
+  const day = date.getUTCDay() || 7;
+  const monday = new Date(date);
+  monday.setUTCDate(date.getUTCDate() - day + 1);
+
+  const thursday = new Date(monday);
+  thursday.setUTCDate(monday.getUTCDate() + 3);
+  const isoYear = thursday.getUTCFullYear();
+
+  const januaryFourth = new Date(Date.UTC(isoYear, 0, 4));
+  const januaryFourthDay = januaryFourth.getUTCDay() || 7;
+  const firstMonday = new Date(januaryFourth);
+  firstMonday.setUTCDate(januaryFourth.getUTCDate() - januaryFourthDay + 1);
+
+  const weekNumber = Math.floor((monday - firstMonday) / 604_800_000) + 1;
+  const sunday = new Date(monday);
+  sunday.setUTCDate(monday.getUTCDate() + 6);
+
+  return {
+    key: `${isoYear}-W${String(weekNumber).padStart(2, "0")}`,
+    label: `${isoYear} 年第 ${weekNumber} 周 · ${formatMonthDay(monday)}–${formatMonthDay(sunday)}`,
+  };
+}
+
+function periodBucket(period, dateKey) {
+  if (period === "daily") {
+    return { key: dateKey, label: dateKey };
+  }
+
+  if (period === "weekly") {
+    return getIsoWeekInfo(dateKey);
+  }
+
+  if (period === "monthly") {
+    const date = parseDateKey(dateKey);
+    if (!date) {
+      return null;
+    }
+    return {
+      key: dateKey.slice(0, 7),
+      label: `${date.getUTCFullYear()} 年 ${date.getUTCMonth() + 1} 月`,
+    };
+  }
+
+  return null;
+}
+
+function buildDashboardNavigation(snapshotMetadata, currentDate) {
+  const normalizedSnapshots = (snapshotMetadata || [])
+    .map((snapshot) => ({
+      date: snapshot.date,
+      periods: [...new Set(snapshot.periods || [])],
+    }))
+    .filter((snapshot) => parseDateKey(snapshot.date))
+    .sort((left, right) => left.date.localeCompare(right.date));
+
+  const dateOptions = {};
+  for (const period of PERIOD_ORDER) {
+    const buckets = new Map();
+    for (const snapshot of normalizedSnapshots) {
+      if (!snapshot.periods.includes(period)) {
+        continue;
+      }
+
+      const bucket = periodBucket(period, snapshot.date);
+      if (!bucket) {
+        continue;
+      }
+
+      const previous = buckets.get(bucket.key);
+      if (!previous || snapshot.date > previous.date) {
+        buckets.set(bucket.key, {
+          ...bucket,
+          date: snapshot.date,
+        });
+      }
+    }
+
+    dateOptions[period] = [...buckets.values()].sort((left, right) => right.date.localeCompare(left.date));
+  }
+
+  const selectedBuckets = Object.fromEntries(
+    PERIOD_ORDER.map((period) => [period, periodBucket(period, currentDate)?.key || ""]),
+  );
+
+  return {
+    currentDate,
+    periodOrder: PERIOD_ORDER.filter((period) => dateOptions[period].length > 0),
+    dateOptions,
+    selectedBuckets,
+  };
+}
+
 function buildDashboardModel(repositories, generatedAt) {
   const grouped = repositories.reduce((map, repository) => {
     const list = map.get(repository.period) || [];
@@ -350,6 +519,7 @@ function buildDashboardModel(repositories, generatedAt) {
 
 export {
   buildDashboardModel,
+  buildDashboardNavigation,
   formatCompactNumber,
   formatStarsThisPeriod,
 };

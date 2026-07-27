@@ -1,6 +1,6 @@
 ---
 name: analyze-github-trending
-description: Analyze GitHub Trending repositories and generate publish-ready Chinese daily, weekly, and monthly Markdown reports with a synced dashboard view. Use when an agent needs to collect all repositories from GitHub Trending, read repository README content, produce macro trend analysis with strict What/Why/How framing, generate trend-aware per-project AI Insight summaries, or explicitly mark AI open source, AI agents, and AI software development automation projects. The canonical execution entrypoint is `scripts/run-analysis.mjs`, so the workflow stays portable across Codex, Claude Code, OpenCode, and other Agent CLI environments.
+description: Analyze any user-selected subset or combination of GitHub Trending daily, weekly, and monthly repositories, then generate publish-ready Chinese Markdown reports with a synced dashboard view. Use when an agent needs one period, two combined periods, or all three periods; needs README-grounded macro What/Why/How analysis; needs concise Chinese “一句话读懂” plus per-project what/how/three-highlight why analysis; or needs explicit AI open source, AI agent, and AI software-development-automation labels. The canonical entrypoint is `scripts/run-analysis.mjs`.
 ---
 
 # Analyze GitHub Trending
@@ -18,10 +18,12 @@ This `SKILL.md` only adapts the toolkit to Codex skill discovery. The repository
 
 ## Workflow
 
-1. Run the analysis script from the repository root, or adjust the relative path if this toolkit is vendored as a subdirectory.
-2. Review the generated Markdown reports first; they are the canonical publishable outputs.
-3. Treat the generated dashboard at `reports/github-trending/dashboard/index.html` as a synchronized companion view, not a separate source of truth.
-4. Edit generated articles only when the user asks for tone, structure, or editorial refinement.
+1. Infer the requested period set from the user's instruction before running the script: `每日 → daily`, `每周 → weekly`, `每月 → monthly`.
+2. Run exactly the requested unique periods in canonical order `daily → weekly → monthly`. Do not silently add an unrequested period. If the user does not specify a period, default to all three.
+3. Run the analysis script from the repository root, or adjust the relative path if this toolkit is vendored as a subdirectory.
+4. Review only the generated Markdown reports for the selected periods; they are the canonical publishable outputs.
+5. Treat the generated dashboard at `reports/github-trending/dashboard/index.html` as a synchronized companion view, not a separate source of truth. The dashboard scans cached dates and exposes day, ISO-week, and calendar-month selectors.
+6. Edit generated articles only when the user asks for tone, structure, or editorial refinement.
 
 ## Bundled Resources
 
@@ -84,6 +86,17 @@ node .\scripts\run-analysis.mjs --period weekly
 node .\scripts\run-analysis.mjs --period monthly
 ```
 
+Run any two-period or three-period combination:
+
+```powershell
+node .\scripts\run-analysis.mjs --period "daily,weekly"
+node .\scripts\run-analysis.mjs --period "weekly,monthly"
+node .\scripts\run-analysis.mjs --period "daily,monthly"
+node .\scripts\run-analysis.mjs --period "daily,weekly,monthly"
+```
+
+Repeated flags are also accepted, for example `--period daily --period weekly`. Prefer the comma-separated form when translating a natural-language user request.
+
 Override the output directory or report date when needed:
 
 ```powershell
@@ -94,9 +107,10 @@ If another workspace vendors this toolkit as a subdirectory, prefix the script p
 
 ## Expected Outputs
 
-- Save canonical Markdown reports under `./reports/github-trending/<date>-daily.md`, `<date>-weekly.md`, and `<date>-monthly.md` by default.
-- Save parsed Trending JSON and enriched repository JSON under `./reports/github-trending/cache/<date>/`.
+- Save canonical Markdown reports only for the requested periods under `./reports/github-trending/<date>-<period>.md`; the default with no explicit period remains all three.
+- Save parsed Trending JSON for the selected periods and enriched repository JSON under `./reports/github-trending/cache/<date>/`. When the same date is analyzed again with another subset, replace the selected periods and preserve other cached periods for Dashboard continuity.
 - Save a synced dashboard webpage under `./reports/github-trending/dashboard/index.html`.
+- Save one static historical snapshot per cached date under `./reports/github-trending/dashboard/history/<date>.html`. The daily selector lists dates, the weekly selector groups snapshots by ISO week, and the monthly selector groups snapshots by calendar month.
 - Keep every repository from each selected Trending page.
 - Mark AI-related repositories inline with visible `【重点关注：...】` labels.
 
@@ -107,32 +121,40 @@ Every project entry must include:
 - project link
 - `Star`
 - period delta: `今日新增`, `本周新增`, or `本月新增`
-- `项目简介`
-- `解决场景`
-- `技术亮点`
-- `为什么会火`
-- `AI Insight`
+- `一句话读懂`
+- `核心价值`
+  - `what`: 用一句话说明项目是什么
+  - `how`: 说明项目如何解决目标场景问题
+  - `why`: 输出三个具体、可验证的核心亮点
 
-Project-level analysis must be generated through this workflow:
+Generate project-level analysis from the repository description and README evidence:
 
-1. `Macro-Synthesis`
-   - Use the macro trend conclusions as the period's “时代背景”.
-2. `Dynamic Routing`
-   - Choose the micro analysis focus from the matched macro trend.
-   - If the trend is `AI Agent 工业化`, prioritize `自主性` and `工具调用`.
-   - If the trend is `AI 编程增强`, prioritize `上下文管理能力`、`RAG 检索增强`、`代码架构理解`.
-3. `Micro-Validation`
-   - Summarize each project with the routed framework.
-   - If the project aligns with the macro trend, explicitly state how it validates or supports that trend.
-   - If the project does not align with the macro trend, do not force a validation claim.
+1. `One-Line Synthesis`
+   - Compress the project into one direct Chinese sentence.
+   - State the target user or system, the core mechanism, and the practical benefit whenever evidence supports them.
+   - Do not repeat macro trend commentary, Star growth, or generic popularity claims.
+2. `Core Value`
+   - `what` must identify the project category and primary function.
+   - `how` must explain the implementation path or workflow, not merely restate the problem.
+   - `why` must contain exactly three concise highlights grounded in README capabilities.
+3. `Evidence Selection`
+   - Prefer concrete details such as supported languages, MCP tools, architecture analysis, PoC validation, CI/CD integration, deployment mode, and measurable efficiency gains.
+   - Do not claim full-codebase auditing; use only the description and rendered README evidence.
 
-The project analysis must stay compact, Chinese, and answer these questions clearly:
+Use this Markdown shape for every repository:
 
-- 项目是什么
-- 项目在什么具体场景下解决问题
-- 项目的技术亮点是什么
-- 项目为什么会火
-- 它是否印证了本期宏观趋势
+```markdown
+- 一句话读懂：...
+- 核心价值：
+  - **what**：...
+  - **how**：...
+  - **why**：
+    1. ...
+    2. ...
+    3. ...
+```
+
+The same fields and wording must feed the daily, weekly, and monthly Markdown reports and the dashboard project cards. Historical dashboard pages must be generated only from `cache/<date>/enriched-repositories.json`, so switching dates never creates a second analysis口径.
 
 ## Review Guidelines
 
@@ -141,5 +163,5 @@ The project analysis must stay compact, Chinese, and answer these questions clea
 - Read [references/report-guidelines.md](references/report-guidelines.md) when reshaping the article without changing the data pipeline.
 - Keep the workflow portable: do not rely on Codex-only behaviors when the same result can be produced by reading Markdown instructions and running the bundled Node scripts.
 - When revising `整体趋势分析`, keep it anchored to shared pain points and macro trends rather than per-repo summaries.
-- When revising project-level `AI Insight`, preserve the macro-to-micro routing logic instead of rewriting each project as an isolated blurb.
+- When revising project cards, keep `一句话读懂` concise and preserve the exact `what` / `how` / three-item `why` structure.
 - If the user asks for deeper technical commentary, build on cached README-derived notes instead of re-scraping unless the report date or period changed.

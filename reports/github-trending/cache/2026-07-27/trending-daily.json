@@ -1,0 +1,615 @@
+[
+  {
+    "period": "daily",
+    "rank": 1,
+    "owner": "permissionlesstech",
+    "name": "bitchat",
+    "fullName": "permissionlesstech/bitchat",
+    "projectLink": "https://github.com/permissionlesstech/bitchat",
+    "description": "bluetooth mesh chat, IRC vibes",
+    "language": "Swift",
+    "stars": 31036,
+    "forks": 4859,
+    "deltaStars": 1166,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "jackjackbits",
+        "profile": "https://github.com/jackjackbits"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "qalandarov",
+        "profile": "https://github.com/qalandarov"
+      },
+      {
+        "login": "actions-user",
+        "profile": "https://github.com/actions-user"
+      },
+      {
+        "login": "callebtc",
+        "profile": "https://github.com/callebtc"
+      }
+    ],
+    "trendingSnippet": "Star\n\n permissionlesstech /\n\n bitchat\n\n bluetooth mesh chat, IRC vibes\n\n Swift\n\n 31,036\n\n 4,859\n\n Built by\n\n 1,166 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 2,
+    "owner": "citrolabs",
+    "name": "ego-lite",
+    "fullName": "citrolabs/ego-lite",
+    "projectLink": "https://github.com/citrolabs/ego-lite",
+    "description": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+    "language": "JavaScript",
+    "stars": 5057,
+    "forks": 241,
+    "deltaStars": 900,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "section9-lab",
+        "profile": "https://github.com/section9-lab"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "WUXM5",
+        "profile": "https://github.com/WUXM5"
+      },
+      {
+        "login": "aute",
+        "profile": "https://github.com/aute"
+      },
+      {
+        "login": "braxtonROSE4",
+        "profile": "https://github.com/braxtonROSE4"
+      }
+    ],
+    "trendingSnippet": "Star\n\n citrolabs /\n\n ego-lite\n\n The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.\n\n JavaScript\n\n 5,057\n\n 241\n\n Built by\n\n 900 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 3,
+    "owner": "block",
+    "name": "buzz",
+    "fullName": "block/buzz",
+    "projectLink": "https://github.com/block/buzz",
+    "description": "A hive mind communication platform",
+    "language": "Rust",
+    "stars": 13795,
+    "forks": 1140,
+    "deltaStars": 1710,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "wesbillman",
+        "profile": "https://github.com/wesbillman"
+      },
+      {
+        "login": "wpfleger96",
+        "profile": "https://github.com/wpfleger96"
+      },
+      {
+        "login": "tlongwell-block",
+        "profile": "https://github.com/tlongwell-block"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "klopez4212",
+        "profile": "https://github.com/klopez4212"
+      }
+    ],
+    "trendingSnippet": "Star\n\n block /\n\n buzz\n\n A hive mind communication platform\n\n Rust\n\n 13,795\n\n 1,140\n\n Built by\n\n 1,710 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 4,
+    "owner": "pingdotgg",
+    "name": "t3code",
+    "fullName": "pingdotgg/t3code",
+    "projectLink": "https://github.com/pingdotgg/t3code",
+    "description": "",
+    "language": "TypeScript",
+    "stars": 15155,
+    "forks": 3315,
+    "deltaStars": 149,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "juliusmarminge",
+        "profile": "https://github.com/juliusmarminge"
+      },
+      {
+        "login": "codex",
+        "profile": "https://github.com/codex"
+      },
+      {
+        "login": "t3dotgg",
+        "profile": "https://github.com/t3dotgg"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "cursoragent",
+        "profile": "https://github.com/cursoragent"
+      }
+    ],
+    "trendingSnippet": "Star\n\n pingdotgg /\n\n t3code\n\n TypeScript\n\n 15,155\n\n 3,315\n\n Built by\n\n 149 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 5,
+    "owner": "CoreBunch",
+    "name": "Instatic",
+    "fullName": "CoreBunch/Instatic",
+    "projectLink": "https://github.com/CoreBunch/Instatic",
+    "description": "The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.",
+    "language": "TypeScript",
+    "stars": 5882,
+    "forks": 527,
+    "deltaStars": 888,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "DavidBabinec",
+        "profile": "https://github.com/DavidBabinec"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "RemiAsselin42",
+        "profile": "https://github.com/RemiAsselin42"
+      },
+      {
+        "login": "hrq-chiuchi",
+        "profile": "https://github.com/hrq-chiuchi"
+      },
+      {
+        "login": "mvanhorn",
+        "profile": "https://github.com/mvanhorn"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n CoreBunch /\n\n Instatic\n\n The open-source alternative to Webflow, Framer and WordPress. Agentic self-hosted visual CMS outputting clean static pages. Users, roles, plugins, content, database, it's all there.\n\n TypeScript\n\n 5,882\n\n 527\n\n Built by\n\n 888 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 6,
+    "owner": "yorukot",
+    "name": "superfile",
+    "fullName": "yorukot/superfile",
+    "projectLink": "https://github.com/yorukot/superfile",
+    "description": "Pretty fancy and modern terminal file manager",
+    "language": "Go",
+    "stars": 20424,
+    "forks": 645,
+    "deltaStars": 131,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "yorukot",
+        "profile": "https://github.com/yorukot"
+      },
+      {
+        "login": "lazysegtree",
+        "profile": "https://github.com/lazysegtree"
+      },
+      {
+        "login": "nonepork",
+        "profile": "https://github.com/nonepork"
+      },
+      {
+        "login": "AnshumanNeon",
+        "profile": "https://github.com/AnshumanNeon"
+      }
+    ],
+    "trendingSnippet": "Star\n\n yorukot /\n\n superfile\n\n Pretty fancy and modern terminal file manager\n\n Go\n\n 20,424\n\n 645\n\n Built by\n\n 131 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 7,
+    "owner": "nodejs",
+    "name": "node",
+    "fullName": "nodejs/node",
+    "projectLink": "https://github.com/nodejs/node",
+    "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+    "language": "JavaScript",
+    "stars": 118527,
+    "forks": 36181,
+    "deltaStars": 36,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "Trott",
+        "profile": "https://github.com/Trott"
+      },
+      {
+        "login": "ry",
+        "profile": "https://github.com/ry"
+      },
+      {
+        "login": "bnoordhuis",
+        "profile": "https://github.com/bnoordhuis"
+      },
+      {
+        "login": "addaleax",
+        "profile": "https://github.com/addaleax"
+      },
+      {
+        "login": "isaacs",
+        "profile": "https://github.com/isaacs"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n nodejs /\n\n node\n\n Node.js JavaScript runtime ✨🐢🚀✨\n\n JavaScript\n\n 118,527\n\n 36,181\n\n Built by\n\n 36 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 8,
+    "owner": "OtterMind",
+    "name": "Chat2DB",
+    "fullName": "OtterMind/Chat2DB",
+    "projectLink": "https://github.com/OtterMind/Chat2DB",
+    "description": "🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.",
+    "language": "Java",
+    "stars": 27291,
+    "forks": 2949,
+    "deltaStars": 398,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "shanhexi",
+        "profile": "https://github.com/shanhexi"
+      },
+      {
+        "login": "Chat2DB-Pro",
+        "profile": "https://github.com/Chat2DB-Pro"
+      },
+      {
+        "login": "JerryFan626",
+        "profile": "https://github.com/JerryFan626"
+      },
+      {
+        "login": "chat2db-jerry",
+        "profile": "https://github.com/chat2db-jerry"
+      },
+      {
+        "login": "robinji0",
+        "profile": "https://github.com/robinji0"
+      }
+    ],
+    "trendingSnippet": "Star\n\n OtterMind /\n\n Chat2DB\n\n 🔥🔥🔥 AI-driven database tool and SQL client, The hottest GUI client, supporting MySQL, Oracle, PostgreSQL, DB2, SQL Server, DB2, SQLite, H2, ClickHouse, and more.\n\n Java\n\n 27,291\n\n 2,949\n\n Built by\n\n 398 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 9,
+    "owner": "pbakaus",
+    "name": "impeccable",
+    "fullName": "pbakaus/impeccable",
+    "projectLink": "https://github.com/pbakaus/impeccable",
+    "description": "The design language that makes your AI harness better at design.",
+    "language": "JavaScript",
+    "stars": 50931,
+    "forks": 3002,
+    "deltaStars": 413,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "pbakaus",
+        "profile": "https://github.com/pbakaus"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "abdulwahabone",
+        "profile": "https://github.com/abdulwahabone"
+      }
+    ],
+    "trendingSnippet": "Star\n\n pbakaus /\n\n impeccable\n\n The design language that makes your AI harness better at design.\n\n JavaScript\n\n 50,931\n\n 3,002\n\n Built by\n\n 413 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 10,
+    "owner": "shiyu-coder",
+    "name": "Kronos",
+    "fullName": "shiyu-coder/Kronos",
+    "projectLink": "https://github.com/shiyu-coder/Kronos",
+    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "language": "Python",
+    "stars": 34297,
+    "forks": 5772,
+    "deltaStars": 321,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "shiyu-coder",
+        "profile": "https://github.com/shiyu-coder"
+      },
+      {
+        "login": "Luciferbobo",
+        "profile": "https://github.com/Luciferbobo"
+      },
+      {
+        "login": "CharlesJ-ABu",
+        "profile": "https://github.com/CharlesJ-ABu"
+      },
+      {
+        "login": "AnMakc",
+        "profile": "https://github.com/AnMakc"
+      },
+      {
+        "login": "randyy179",
+        "profile": "https://github.com/randyy179"
+      }
+    ],
+    "trendingSnippet": "Star\n\n shiyu-coder /\n\n Kronos\n\n Kronos: A Foundation Model for the Language of Financial Markets\n\n Python\n\n 34,297\n\n 5,772\n\n Built by\n\n 321 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 11,
+    "owner": "alibaba",
+    "name": "open-code-review",
+    "fullName": "alibaba/open-code-review",
+    "projectLink": "https://github.com/alibaba/open-code-review",
+    "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL...",
+    "language": "Go",
+    "stars": 14180,
+    "forks": 960,
+    "deltaStars": 832,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "lizhengfeng101",
+        "profile": "https://github.com/lizhengfeng101"
+      },
+      {
+        "login": "chethanuk",
+        "profile": "https://github.com/chethanuk"
+      },
+      {
+        "login": "stay-foolish-forever",
+        "profile": "https://github.com/stay-foolish-forever"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "MuoDoo",
+        "profile": "https://github.com/MuoDoo"
+      }
+    ],
+    "trendingSnippet": "Star\n\n alibaba /\n\n open-code-review\n\n Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in fine-tuned ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.\n\n Go\n\n 14,180\n\n 960\n\n Built by\n\n 832 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 12,
+    "owner": "andrewyng",
+    "name": "aisuite",
+    "fullName": "andrewyng/aisuite",
+    "projectLink": "https://github.com/andrewyng/aisuite",
+    "description": "Simple, unified interface to multiple Generative AI providers",
+    "language": "Python",
+    "stars": 15472,
+    "forks": 1638,
+    "deltaStars": 187,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "rohitprasad15",
+        "profile": "https://github.com/rohitprasad15"
+      },
+      {
+        "login": "drp8226",
+        "profile": "https://github.com/drp8226"
+      },
+      {
+        "login": "ksolo",
+        "profile": "https://github.com/ksolo"
+      },
+      {
+        "login": "standsleeping",
+        "profile": "https://github.com/standsleeping"
+      },
+      {
+        "login": "tavinashb",
+        "profile": "https://github.com/tavinashb"
+      }
+    ],
+    "trendingSnippet": "Star\n\n andrewyng /\n\n aisuite\n\n Simple, unified interface to multiple Generative AI providers\n\n Python\n\n 15,472\n\n 1,638\n\n Built by\n\n 187 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 13,
+    "owner": "anthropics",
+    "name": "claude-cookbooks",
+    "fullName": "anthropics/claude-cookbooks",
+    "projectLink": "https://github.com/anthropics/claude-cookbooks",
+    "description": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.",
+    "language": "Jupyter Notebook",
+    "stars": 50377,
+    "forks": 5934,
+    "deltaStars": 379,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "zealoushacker",
+        "profile": "https://github.com/zealoushacker"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "alexalbertt",
+        "profile": "https://github.com/alexalbertt"
+      },
+      {
+        "login": "PedramNavid",
+        "profile": "https://github.com/PedramNavid"
+      },
+      {
+        "login": "saflamini",
+        "profile": "https://github.com/saflamini"
+      }
+    ],
+    "trendingSnippet": "Star\n\n anthropics /\n\n claude-cookbooks\n\n A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.\n\n Jupyter Notebook\n\n 50,377\n\n 5,934\n\n Built by\n\n 379 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 14,
+    "owner": "Pumpkin-MC",
+    "name": "Pumpkin",
+    "fullName": "Pumpkin-MC/Pumpkin",
+    "projectLink": "https://github.com/Pumpkin-MC/Pumpkin",
+    "description": "Empowering everyone to host fast and efficient Minecraft servers.",
+    "language": "Rust",
+    "stars": 10123,
+    "forks": 677,
+    "deltaStars": 338,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "Snowiiii",
+        "profile": "https://github.com/Snowiiii"
+      },
+      {
+        "login": "kralverde",
+        "profile": "https://github.com/kralverde"
+      },
+      {
+        "login": "Bryntet",
+        "profile": "https://github.com/Bryntet"
+      },
+      {
+        "login": "lukas0008",
+        "profile": "https://github.com/lukas0008"
+      },
+      {
+        "login": "Purdze",
+        "profile": "https://github.com/Purdze"
+      }
+    ],
+    "trendingSnippet": "Star\n\n Pumpkin-MC /\n\n Pumpkin\n\n Empowering everyone to host fast and efficient Minecraft servers.\n\n Rust\n\n 10,123\n\n 677\n\n Built by\n\n 338 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 15,
+    "owner": "permissionlesstech",
+    "name": "bitchat-android",
+    "fullName": "permissionlesstech/bitchat-android",
+    "projectLink": "https://github.com/permissionlesstech/bitchat-android",
+    "description": "bluetooth mesh chat, IRC vibes",
+    "language": "Kotlin",
+    "stars": 6846,
+    "forks": 1637,
+    "deltaStars": 260,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "callebtc",
+        "profile": "https://github.com/callebtc"
+      },
+      {
+        "login": "actions-user",
+        "profile": "https://github.com/actions-user"
+      },
+      {
+        "login": "a1denvalu3",
+        "profile": "https://github.com/a1denvalu3"
+      },
+      {
+        "login": "moehamade",
+        "profile": "https://github.com/moehamade"
+      },
+      {
+        "login": "yet300",
+        "profile": "https://github.com/yet300"
+      }
+    ],
+    "trendingSnippet": "Star\n\n permissionlesstech /\n\n bitchat-android\n\n bluetooth mesh chat, IRC vibes\n\n Kotlin\n\n 6,846\n\n 1,637\n\n Built by\n\n 260 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 16,
+    "owner": "jenkinsci",
+    "name": "jenkins",
+    "fullName": "jenkinsci/jenkins",
+    "projectLink": "https://github.com/jenkinsci/jenkins",
+    "description": "Jenkins automation server",
+    "language": "Java",
+    "stars": 25768,
+    "forks": 9663,
+    "deltaStars": 18,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "kohsuke",
+        "profile": "https://github.com/kohsuke"
+      },
+      {
+        "login": "jglick",
+        "profile": "https://github.com/jglick"
+      },
+      {
+        "login": "daniel-beck",
+        "profile": "https://github.com/daniel-beck"
+      },
+      {
+        "login": "oleg-nenashev",
+        "profile": "https://github.com/oleg-nenashev"
+      }
+    ],
+    "trendingSnippet": "Star\n\n jenkinsci /\n\n jenkins\n\n Jenkins automation server\n\n Java\n\n 25,768\n\n 9,663\n\n Built by\n\n 18 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 17,
+    "owner": "amnezia-vpn",
+    "name": "amnezia-client",
+    "fullName": "amnezia-vpn/amnezia-client",
+    "projectLink": "https://github.com/amnezia-vpn/amnezia-client",
+    "description": "Amnezia VPN Client (Desktop+Mobile)",
+    "language": "C++",
+    "stars": 13471,
+    "forks": 1014,
+    "deltaStars": 35,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "pokamest",
+        "profile": "https://github.com/pokamest"
+      },
+      {
+        "login": "Nethius",
+        "profile": "https://github.com/Nethius"
+      },
+      {
+        "login": "albexk",
+        "profile": "https://github.com/albexk"
+      },
+      {
+        "login": "outspace",
+        "profile": "https://github.com/outspace"
+      },
+      {
+        "login": "vkamn",
+        "profile": "https://github.com/vkamn"
+      }
+    ],
+    "trendingSnippet": "Star\n\n amnezia-vpn /\n\n amnezia-client\n\n Amnezia VPN Client (Desktop+Mobile)\n\n C++\n\n 13,471\n\n 1,014\n\n Built by\n\n 35 stars today"
+  }
+]

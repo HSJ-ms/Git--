@@ -1,4 +1,4 @@
 interface:
   display_name: "GitHub Trending AI Analyst"
-  short_description: "Analyze daily, weekly, and monthly GitHub Trending projects"
-  default_prompt: "Use $analyze-github-trending to analyze daily, weekly, and monthly GitHub Trending repositories, produce macro What/Why/How trend analysis, generate trend-aware per-project AI Insight summaries, and sync the bundled dashboard webpage."
+  short_description: "Analyze selected GitHub Trending periods and combinations"
+  default_prompt: "Use $analyze-github-trending to analyze exactly the daily, weekly, and/or monthly GitHub Trending periods I request, generate Chinese What/Why/How reports and project insights, and sync the dashboard."

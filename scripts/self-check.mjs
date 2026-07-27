@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -88,7 +89,11 @@ async function main() {
   assert.ok(!markdown.includes("本期重点关注"), "markdown should not render a focus-only section");
   assert.ok(markdown.includes("【重点关注："), "markdown should show inline focus badge");
   assert.ok(markdown.includes("- 项目链接："), "markdown should include project link");
-  assert.ok(markdown.includes("- 项目简介："), "markdown should include project summary");
+  assert.ok(markdown.includes("- 一句话读懂："), "markdown should include one-line project summary");
+  assert.ok(markdown.includes("- **what**："), "markdown should include project what");
+  assert.ok(markdown.includes("- **how**："), "markdown should include project how");
+  assert.ok(markdown.includes("- **why**："), "markdown should include project highlights");
+  assert.ok(!markdown.includes("AI Insight"), "markdown should not include the old AI Insight label");
   assert.ok(markdown.includes("🎯 宏观 What (演进方向)："), "markdown should render structured trend headings");
   assert.ok(markdown.includes("核心关键词："), "markdown should render structured trend keywords");
 
@@ -99,6 +104,12 @@ async function main() {
     date: "2026-07-02",
   });
   assert.ok(result.dashboardPath.endsWith("dashboard\\index.html") || result.dashboardPath.endsWith("dashboard/index.html"));
+  const dashboardHtml = await readFile(result.dashboardPath, "utf8");
+  const historyPath = path.join(path.dirname(result.dashboardPath), "history", "2026-07-02.html");
+  const historyHtml = await readFile(historyPath, "utf8");
+  assert.ok(dashboardHtml.includes('data-date-control="daily"'), "dashboard should render a daily date selector");
+  assert.ok(dashboardHtml.includes("Archive Browser"), "dashboard should render the history browser");
+  assert.ok(historyHtml.includes('../styles.css'), "history page should resolve shared styles relatively");
 
   console.log("[ok] self-check passed");
 }
