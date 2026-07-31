@@ -1,0 +1,492 @@
+[
+  {
+    "period": "daily",
+    "rank": 1,
+    "owner": "huggingface",
+    "name": "speech-to-speech",
+    "fullName": "huggingface/speech-to-speech",
+    "projectLink": "https://github.com/huggingface/speech-to-speech",
+    "description": "Build local voice agents with open-source models",
+    "language": "Python",
+    "stars": 8823,
+    "forks": 1090,
+    "deltaStars": 628,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "andimarafioti",
+        "profile": "https://github.com/andimarafioti"
+      },
+      {
+        "login": "eustlb",
+        "profile": "https://github.com/eustlb"
+      },
+      {
+        "login": "A-Mahla",
+        "profile": "https://github.com/A-Mahla"
+      },
+      {
+        "login": "ylacombe",
+        "profile": "https://github.com/ylacombe"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      }
+    ],
+    "trendingSnippet": "Star\n\n huggingface /\n\n speech-to-speech\n\n Build local voice agents with open-source models\n\n Python\n\n 8,823\n\n 1,090\n\n Built by\n\n 628 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 2,
+    "owner": "microsoft",
+    "name": "AI-For-Beginners",
+    "fullName": "microsoft/AI-For-Beginners",
+    "projectLink": "https://github.com/microsoft/AI-For-Beginners",
+    "description": "12 Weeks, 24 Lessons, AI for All!",
+    "language": "Jupyter Notebook",
+    "stars": 53942,
+    "forks": 10953,
+    "deltaStars": 155,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "leestott",
+        "profile": "https://github.com/leestott"
+      },
+      {
+        "login": "skytin1004",
+        "profile": "https://github.com/skytin1004"
+      },
+      {
+        "login": "jlooper",
+        "profile": "https://github.com/jlooper"
+      },
+      {
+        "login": "shwars",
+        "profile": "https://github.com/shwars"
+      },
+      {
+        "login": "BethanyJep",
+        "profile": "https://github.com/BethanyJep"
+      }
+    ],
+    "trendingSnippet": "Star\n\n microsoft /\n\n AI-For-Beginners\n\n 12 Weeks, 24 Lessons, AI for All!\n\n Jupyter Notebook\n\n 53,942\n\n 10,953\n\n Built by\n\n 155 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 3,
+    "owner": "paperswithbacktest",
+    "name": "awesome-systematic-trading",
+    "fullName": "paperswithbacktest/awesome-systematic-trading",
+    "projectLink": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+    "description": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.",
+    "language": "Python",
+    "stars": 11055,
+    "forks": 1414,
+    "deltaStars": 621,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "edarchimbaud",
+        "profile": "https://github.com/edarchimbaud"
+      },
+      {
+        "login": "jamesmunro",
+        "profile": "https://github.com/jamesmunro"
+      },
+      {
+        "login": "ss18",
+        "profile": "https://github.com/ss18"
+      },
+      {
+        "login": "leftys",
+        "profile": "https://github.com/leftys"
+      },
+      {
+        "login": "iamjinlei",
+        "profile": "https://github.com/iamjinlei"
+      }
+    ],
+    "trendingSnippet": "Star\n\n paperswithbacktest /\n\n awesome-systematic-trading\n\n A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.\n\n Python\n\n 11,055\n\n 1,414\n\n Built by\n\n 621 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 4,
+    "owner": "different-ai",
+    "name": "openwork",
+    "fullName": "different-ai/openwork",
+    "projectLink": "https://github.com/different-ai/openwork",
+    "description": "The open-source alternative to Claude Cowork (powered by opencode)",
+    "language": "TypeScript",
+    "stars": 18737,
+    "forks": 1906,
+    "deltaStars": 915,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "benjaminshafii",
+        "profile": "https://github.com/benjaminshafii"
+      },
+      {
+        "login": "src-opn",
+        "profile": "https://github.com/src-opn"
+      },
+      {
+        "login": "jcllobet",
+        "profile": "https://github.com/jcllobet"
+      },
+      {
+        "login": "release-bot",
+        "profile": "https://github.com/release-bot"
+      },
+      {
+        "login": "actions-user",
+        "profile": "https://github.com/actions-user"
+      }
+    ],
+    "trendingSnippet": "Star\n\n different-ai /\n\n openwork\n\n The open-source alternative to Claude Cowork (powered by opencode)\n\n TypeScript\n\n 18,737\n\n 1,906\n\n Built by\n\n 915 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 5,
+    "owner": "WhiskeySockets",
+    "name": "Baileys",
+    "fullName": "WhiskeySockets/Baileys",
+    "projectLink": "https://github.com/WhiskeySockets/Baileys",
+    "description": "Socket-based TS/JavaScript API for WhatsApp Web",
+    "language": "JavaScript",
+    "stars": 10437,
+    "forks": 3253,
+    "deltaStars": 19,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "adiwajshing",
+        "profile": "https://github.com/adiwajshing"
+      },
+      {
+        "login": "purpshell",
+        "profile": "https://github.com/purpshell"
+      },
+      {
+        "login": "edgardmessias",
+        "profile": "https://github.com/edgardmessias"
+      },
+      {
+        "login": "jlucaso1",
+        "profile": "https://github.com/jlucaso1"
+      }
+    ],
+    "trendingSnippet": "Star\n\n WhiskeySockets /\n\n Baileys\n\n Socket-based TS/JavaScript API for WhatsApp Web\n\n JavaScript\n\n 10,437\n\n 3,253\n\n Built by\n\n 19 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 6,
+    "owner": "pascalorg",
+    "name": "editor",
+    "fullName": "pascalorg/editor",
+    "projectLink": "https://github.com/pascalorg/editor",
+    "description": "Create and share 3D architectural projects.",
+    "language": "TypeScript",
+    "stars": 20119,
+    "forks": 2621,
+    "deltaStars": 625,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "wass08",
+        "profile": "https://github.com/wass08"
+      },
+      {
+        "login": "Aymericr",
+        "profile": "https://github.com/Aymericr"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "sudhir9297",
+        "profile": "https://github.com/sudhir9297"
+      },
+      {
+        "login": "open-pascal",
+        "profile": "https://github.com/open-pascal"
+      }
+    ],
+    "trendingSnippet": "Star\n\n pascalorg /\n\n editor\n\n Create and share 3D architectural projects.\n\n TypeScript\n\n 20,119\n\n 2,621\n\n Built by\n\n 625 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 7,
+    "owner": "mvanhorn",
+    "name": "last30days-skill",
+    "fullName": "mvanhorn/last30days-skill",
+    "projectLink": "https://github.com/mvanhorn/last30days-skill",
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "language": "Python",
+    "stars": 55559,
+    "forks": 4786,
+    "deltaStars": 378,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "mvanhorn",
+        "profile": "https://github.com/mvanhorn"
+      },
+      {
+        "login": "tmchow",
+        "profile": "https://github.com/tmchow"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "23241a6749",
+        "profile": "https://github.com/23241a6749"
+      },
+      {
+        "login": "j-sperling",
+        "profile": "https://github.com/j-sperling"
+      }
+    ],
+    "trendingSnippet": "Star\n\n mvanhorn /\n\n last30days-skill\n\n AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary\n\n Python\n\n 55,559\n\n 4,786\n\n Built by\n\n 378 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 8,
+    "owner": "dotnet",
+    "name": "aspnetcore",
+    "fullName": "dotnet/aspnetcore",
+    "projectLink": "https://github.com/dotnet/aspnetcore",
+    "description": "ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.",
+    "language": "C#",
+    "stars": 38291,
+    "forks": 10859,
+    "deltaStars": 7,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "pranavkm",
+        "profile": "https://github.com/pranavkm"
+      },
+      {
+        "login": "aspnetci",
+        "profile": "https://github.com/aspnetci"
+      },
+      {
+        "login": "dougbu",
+        "profile": "https://github.com/dougbu"
+      },
+      {
+        "login": "Tratcher",
+        "profile": "https://github.com/Tratcher"
+      }
+    ],
+    "trendingSnippet": "Star\n\n dotnet /\n\n aspnetcore\n\n ASP.NET Core is a cross-platform .NET framework for building modern cloud-based web applications on Windows, Mac, or Linux.\n\n C#\n\n 38,291\n\n 10,859\n\n Built by\n\n 7 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 9,
+    "owner": "microsoft",
+    "name": "PowerToys",
+    "fullName": "microsoft/PowerToys",
+    "projectLink": "https://github.com/microsoft/PowerToys",
+    "description": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows",
+    "language": "C",
+    "stars": 137125,
+    "forks": 8364,
+    "deltaStars": 70,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "crutkas",
+        "profile": "https://github.com/crutkas"
+      },
+      {
+        "login": "bao-qian",
+        "profile": "https://github.com/bao-qian"
+      },
+      {
+        "login": "qianlifeng",
+        "profile": "https://github.com/qianlifeng"
+      },
+      {
+        "login": "niels9001",
+        "profile": "https://github.com/niels9001"
+      },
+      {
+        "login": "jaimecbernardo",
+        "profile": "https://github.com/jaimecbernardo"
+      }
+    ],
+    "trendingSnippet": "Star\n\n microsoft /\n\n PowerToys\n\n Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows\n\n C\n\n 137,125\n\n 8,364\n\n Built by\n\n 70 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 10,
+    "owner": "ansible",
+    "name": "ansible",
+    "fullName": "ansible/ansible",
+    "projectLink": "https://github.com/ansible/ansible",
+    "description": "Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a...",
+    "language": "Python",
+    "stars": 69882,
+    "forks": 24249,
+    "deltaStars": 29,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "bcoca",
+        "profile": "https://github.com/bcoca"
+      },
+      {
+        "login": "mpdehaan",
+        "profile": "https://github.com/mpdehaan"
+      },
+      {
+        "login": "mattclay",
+        "profile": "https://github.com/mattclay"
+      },
+      {
+        "login": "jimi-c",
+        "profile": "https://github.com/jimi-c"
+      },
+      {
+        "login": "abadger",
+        "profile": "https://github.com/abadger"
+      }
+    ],
+    "trendingSnippet": "Star\n\n ansible /\n\n ansible\n\n Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. https://docs.ansible.com .\n\n Python\n\n 69,882\n\n 24,249\n\n Built by\n\n 29 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 11,
+    "owner": "ChromeDevTools",
+    "name": "chrome-devtools-mcp",
+    "fullName": "ChromeDevTools/chrome-devtools-mcp",
+    "projectLink": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "description": "Chrome DevTools for coding agents",
+    "language": "TypeScript",
+    "stars": 48053,
+    "forks": 3259,
+    "deltaStars": 80,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "OrKoN",
+        "profile": "https://github.com/OrKoN"
+      },
+      {
+        "login": "Lightning00Blade",
+        "profile": "https://github.com/Lightning00Blade"
+      },
+      {
+        "login": "browser-automation-bot",
+        "profile": "https://github.com/browser-automation-bot"
+      },
+      {
+        "login": "nroscino",
+        "profile": "https://github.com/nroscino"
+      }
+    ],
+    "trendingSnippet": "Star\n\n ChromeDevTools /\n\n chrome-devtools-mcp\n\n Chrome DevTools for coding agents\n\n TypeScript\n\n 48,053\n\n 3,259\n\n Built by\n\n 80 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 12,
+    "owner": "jenkinsci",
+    "name": "jenkins",
+    "fullName": "jenkinsci/jenkins",
+    "projectLink": "https://github.com/jenkinsci/jenkins",
+    "description": "Jenkins automation server",
+    "language": "Java",
+    "stars": 26296,
+    "forks": 9718,
+    "deltaStars": 25,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "kohsuke",
+        "profile": "https://github.com/kohsuke"
+      },
+      {
+        "login": "jglick",
+        "profile": "https://github.com/jglick"
+      },
+      {
+        "login": "daniel-beck",
+        "profile": "https://github.com/daniel-beck"
+      },
+      {
+        "login": "oleg-nenashev",
+        "profile": "https://github.com/oleg-nenashev"
+      }
+    ],
+    "trendingSnippet": "Star\n\n jenkinsci /\n\n jenkins\n\n Jenkins automation server\n\n Java\n\n 26,296\n\n 9,718\n\n Built by\n\n 25 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 13,
+    "owner": "agavra",
+    "name": "tuicr",
+    "fullName": "agavra/tuicr",
+    "projectLink": "https://github.com/agavra/tuicr",
+    "description": "a code review TUI with vim keybindings",
+    "language": "Rust",
+    "stars": 1864,
+    "forks": 161,
+    "deltaStars": 190,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "agavra",
+        "profile": "https://github.com/agavra"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "martintrojer",
+        "profile": "https://github.com/martintrojer"
+      },
+      {
+        "login": "ptoussai",
+        "profile": "https://github.com/ptoussai"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n agavra /\n\n tuicr\n\n a code review TUI with vim keybindings\n\n Rust\n\n 1,864\n\n 161\n\n Built by\n\n 190 stars today"
+  },
+  {
+    "period": "daily",
+    "rank": 14,
+    "owner": "affaan-m",
+    "name": "ECC",
+    "fullName": "affaan-m/ECC",
+    "projectLink": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "language": "JavaScript",
+    "stars": 236223,
+    "forks": 35926,
+    "deltaStars": 804,
+    "deltaLabel": "今日新增",
+    "contributors": [
+      {
+        "login": "affaan-m",
+        "profile": "https://github.com/affaan-m"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "pangerlkr",
+        "profile": "https://github.com/pangerlkr"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n affaan-m /\n\n ECC\n\n The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.\n\n JavaScript\n\n 236,223\n\n 35,926\n\n Built by\n\n 804 stars today"
+  }
+]
