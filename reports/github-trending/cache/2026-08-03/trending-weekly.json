@@ -1,0 +1,661 @@
+[
+  {
+    "period": "weekly",
+    "rank": 1,
+    "owner": "block",
+    "name": "buzz",
+    "fullName": "block/buzz",
+    "projectLink": "https://github.com/block/buzz",
+    "description": "A hive mind communication platform",
+    "language": "Rust",
+    "stars": 21106,
+    "forks": 2260,
+    "deltaStars": 8217,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "wesbillman",
+        "profile": "https://github.com/wesbillman"
+      },
+      {
+        "login": "wpfleger96",
+        "profile": "https://github.com/wpfleger96"
+      },
+      {
+        "login": "tlongwell-block",
+        "profile": "https://github.com/tlongwell-block"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "klopez4212",
+        "profile": "https://github.com/klopez4212"
+      }
+    ],
+    "trendingSnippet": "Star\n\n block /\n\n buzz\n\n A hive mind communication platform\n\n Rust\n\n 21,106\n\n 2,260\n\n Built by\n\n 8,217 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 2,
+    "owner": "virgiliojr94",
+    "name": "book-to-skill",
+    "fullName": "virgiliojr94/book-to-skill",
+    "projectLink": "https://github.com/virgiliojr94/book-to-skill",
+    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+    "language": "Python",
+    "stars": 15359,
+    "forks": 1659,
+    "deltaStars": 5223,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "virgiliojr94",
+        "profile": "https://github.com/virgiliojr94"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "dex0shubham",
+        "profile": "https://github.com/dex0shubham"
+      },
+      {
+        "login": "Marcelluxx",
+        "profile": "https://github.com/Marcelluxx"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n virgiliojr94 /\n\n book-to-skill\n\n Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.\n\n Python\n\n 15,359\n\n 1,659\n\n Built by\n\n 5,223 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 3,
+    "owner": "ayghri",
+    "name": "i-have-adhd",
+    "fullName": "ayghri/i-have-adhd",
+    "projectLink": "https://github.com/ayghri/i-have-adhd",
+    "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "language": "Python",
+    "stars": 15692,
+    "forks": 876,
+    "deltaStars": 5225,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "ayghri",
+        "profile": "https://github.com/ayghri"
+      },
+      {
+        "login": "thejesh23",
+        "profile": "https://github.com/thejesh23"
+      },
+      {
+        "login": "jabrahamtech",
+        "profile": "https://github.com/jabrahamtech"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "isatimur",
+        "profile": "https://github.com/isatimur"
+      }
+    ],
+    "trendingSnippet": "Star\n\n ayghri /\n\n i-have-adhd\n\n A skill to stop your coding agent from burying the answer. ADHD-friendly output.\n\n Python\n\n 15,692\n\n 876\n\n Built by\n\n 5,225 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 4,
+    "owner": "microsoft",
+    "name": "AI-For-Beginners",
+    "fullName": "microsoft/AI-For-Beginners",
+    "projectLink": "https://github.com/microsoft/AI-For-Beginners",
+    "description": "12 Weeks, 24 Lessons, AI for All!",
+    "language": "Jupyter Notebook",
+    "stars": 59035,
+    "forks": 11604,
+    "deltaStars": 5601,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "leestott",
+        "profile": "https://github.com/leestott"
+      },
+      {
+        "login": "skytin1004",
+        "profile": "https://github.com/skytin1004"
+      },
+      {
+        "login": "jlooper",
+        "profile": "https://github.com/jlooper"
+      },
+      {
+        "login": "shwars",
+        "profile": "https://github.com/shwars"
+      },
+      {
+        "login": "BethanyJep",
+        "profile": "https://github.com/BethanyJep"
+      }
+    ],
+    "trendingSnippet": "Star\n\n microsoft /\n\n AI-For-Beginners\n\n 12 Weeks, 24 Lessons, AI for All!\n\n Jupyter Notebook\n\n 59,035\n\n 11,604\n\n Built by\n\n 5,601 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 5,
+    "owner": "bojieli",
+    "name": "ai-agent-book",
+    "fullName": "bojieli/ai-agent-book",
+    "projectLink": "https://github.com/bojieli/ai-agent-book",
+    "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+    "language": "Python",
+    "stars": 29922,
+    "forks": 3193,
+    "deltaStars": 9298,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "bojieli",
+        "profile": "https://github.com/bojieli"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "whanyu1212",
+        "profile": "https://github.com/whanyu1212"
+      },
+      {
+        "login": "santhreal",
+        "profile": "https://github.com/santhreal"
+      },
+      {
+        "login": "thejesh23",
+        "profile": "https://github.com/thejesh23"
+      }
+    ],
+    "trendingSnippet": "Star\n\n bojieli /\n\n ai-agent-book\n\n 《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码\n\n Python\n\n 29,922\n\n 3,193\n\n Built by\n\n 9,298 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 6,
+    "owner": "1jehuang",
+    "name": "jcode",
+    "fullName": "1jehuang/jcode",
+    "projectLink": "https://github.com/1jehuang/jcode",
+    "description": "The most RAM efficient harness",
+    "language": "Rust",
+    "stars": 15275,
+    "forks": 1692,
+    "deltaStars": 3620,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "1jehuang",
+        "profile": "https://github.com/1jehuang"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "luciusrockwing",
+        "profile": "https://github.com/luciusrockwing"
+      },
+      {
+        "login": "FabianAmherd",
+        "profile": "https://github.com/FabianAmherd"
+      },
+      {
+        "login": "hongnoul",
+        "profile": "https://github.com/hongnoul"
+      }
+    ],
+    "trendingSnippet": "Star\n\n 1jehuang /\n\n jcode\n\n The most RAM efficient harness\n\n Rust\n\n 15,275\n\n 1,692\n\n Built by\n\n 3,620 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 7,
+    "owner": "pascalorg",
+    "name": "editor",
+    "fullName": "pascalorg/editor",
+    "projectLink": "https://github.com/pascalorg/editor",
+    "description": "Create and share 3D architectural projects.",
+    "language": "TypeScript",
+    "stars": 20745,
+    "forks": 2664,
+    "deltaStars": 3163,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "wass08",
+        "profile": "https://github.com/wass08"
+      },
+      {
+        "login": "Aymericr",
+        "profile": "https://github.com/Aymericr"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "sudhir9297",
+        "profile": "https://github.com/sudhir9297"
+      },
+      {
+        "login": "open-pascal",
+        "profile": "https://github.com/open-pascal"
+      }
+    ],
+    "trendingSnippet": "Star\n\n pascalorg /\n\n editor\n\n Create and share 3D architectural projects.\n\n TypeScript\n\n 20,745\n\n 2,664\n\n Built by\n\n 3,163 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 8,
+    "owner": "alibaba",
+    "name": "open-code-review",
+    "fullName": "alibaba/open-code-review",
+    "projectLink": "https://github.com/alibaba/open-code-review",
+    "description": "Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS,...",
+    "language": "Go",
+    "stars": 17889,
+    "forks": 1207,
+    "deltaStars": 4365,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "lizhengfeng101",
+        "profile": "https://github.com/lizhengfeng101"
+      },
+      {
+        "login": "chethanuk",
+        "profile": "https://github.com/chethanuk"
+      },
+      {
+        "login": "stay-foolish-forever",
+        "profile": "https://github.com/stay-foolish-forever"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "MuoDoo",
+        "profile": "https://github.com/MuoDoo"
+      }
+    ],
+    "trendingSnippet": "Star\n\n alibaba /\n\n open-code-review\n\n Open-source & free — Battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.\n\n Go\n\n 17,889\n\n 1,207\n\n Built by\n\n 4,365 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 9,
+    "owner": "permissionlesstech",
+    "name": "bitchat",
+    "fullName": "permissionlesstech/bitchat",
+    "projectLink": "https://github.com/permissionlesstech/bitchat",
+    "description": "bluetooth mesh chat, IRC vibes",
+    "language": "Swift",
+    "stars": 34157,
+    "forks": 5455,
+    "deltaStars": 4942,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "jackjackbits",
+        "profile": "https://github.com/jackjackbits"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "qalandarov",
+        "profile": "https://github.com/qalandarov"
+      },
+      {
+        "login": "actions-user",
+        "profile": "https://github.com/actions-user"
+      },
+      {
+        "login": "callebtc",
+        "profile": "https://github.com/callebtc"
+      }
+    ],
+    "trendingSnippet": "Star\n\n permissionlesstech /\n\n bitchat\n\n bluetooth mesh chat, IRC vibes\n\n Swift\n\n 34,157\n\n 5,455\n\n Built by\n\n 4,942 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 10,
+    "owner": "moeru-ai",
+    "name": "airi",
+    "fullName": "moeru-ai/airi",
+    "projectLink": "https://github.com/moeru-ai/airi",
+    "description": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio pla...",
+    "language": "TypeScript",
+    "stars": 46546,
+    "forks": 4591,
+    "deltaStars": 3431,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "nekomeowww",
+        "profile": "https://github.com/nekomeowww"
+      },
+      {
+        "login": "luoling8192",
+        "profile": "https://github.com/luoling8192"
+      },
+      {
+        "login": "shinohara-rin",
+        "profile": "https://github.com/shinohara-rin"
+      },
+      {
+        "login": "sumimakito",
+        "profile": "https://github.com/sumimakito"
+      }
+    ],
+    "trendingSnippet": "Star\n\n moeru-ai /\n\n airi\n\n 💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.\n\n TypeScript\n\n 46,546\n\n 4,591\n\n Built by\n\n 3,431 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 11,
+    "owner": "andrewyng",
+    "name": "aisuite",
+    "fullName": "andrewyng/aisuite",
+    "projectLink": "https://github.com/andrewyng/aisuite",
+    "description": "Simple, unified interface to multiple Generative AI providers",
+    "language": "Python",
+    "stars": 15901,
+    "forks": 1685,
+    "deltaStars": 576,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "rohitprasad15",
+        "profile": "https://github.com/rohitprasad15"
+      },
+      {
+        "login": "drp8226",
+        "profile": "https://github.com/drp8226"
+      },
+      {
+        "login": "ksolo",
+        "profile": "https://github.com/ksolo"
+      },
+      {
+        "login": "standsleeping",
+        "profile": "https://github.com/standsleeping"
+      },
+      {
+        "login": "tavinashb",
+        "profile": "https://github.com/tavinashb"
+      }
+    ],
+    "trendingSnippet": "Star\n\n andrewyng /\n\n aisuite\n\n Simple, unified interface to multiple Generative AI providers\n\n Python\n\n 15,901\n\n 1,685\n\n Built by\n\n 576 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 12,
+    "owner": "opengeos",
+    "name": "GeoLibre",
+    "fullName": "opengeos/GeoLibre",
+    "projectLink": "https://github.com/opengeos/GeoLibre",
+    "description": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+    "language": "TypeScript",
+    "stars": 4979,
+    "forks": 499,
+    "deltaStars": 2933,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "giswqs",
+        "profile": "https://github.com/giswqs"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n opengeos /\n\n GeoLibre\n\n A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.\n\n TypeScript\n\n 4,979\n\n 499\n\n Built by\n\n 2,933 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 13,
+    "owner": "citrolabs",
+    "name": "ego-lite",
+    "fullName": "citrolabs/ego-lite",
+    "projectLink": "https://github.com/citrolabs/ego-lite",
+    "description": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
+    "language": "JavaScript",
+    "stars": 7675,
+    "forks": 381,
+    "deltaStars": 3582,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "section9-lab",
+        "profile": "https://github.com/section9-lab"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "WUXM5",
+        "profile": "https://github.com/WUXM5"
+      },
+      {
+        "login": "aute",
+        "profile": "https://github.com/aute"
+      },
+      {
+        "login": "braxtonROSE4",
+        "profile": "https://github.com/braxtonROSE4"
+      }
+    ],
+    "trendingSnippet": "Star\n\n citrolabs /\n\n ego-lite\n\n The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.\n\n JavaScript\n\n 7,675\n\n 381\n\n Built by\n\n 3,582 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 14,
+    "owner": "pingdotgg",
+    "name": "t3code",
+    "fullName": "pingdotgg/t3code",
+    "projectLink": "https://github.com/pingdotgg/t3code",
+    "description": "",
+    "language": "TypeScript",
+    "stars": 16347,
+    "forks": 3643,
+    "deltaStars": 1431,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "juliusmarminge",
+        "profile": "https://github.com/juliusmarminge"
+      },
+      {
+        "login": "codex",
+        "profile": "https://github.com/codex"
+      },
+      {
+        "login": "t3dotgg",
+        "profile": "https://github.com/t3dotgg"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "cursoragent",
+        "profile": "https://github.com/cursoragent"
+      }
+    ],
+    "trendingSnippet": "Star\n\n pingdotgg /\n\n t3code\n\n TypeScript\n\n 16,347\n\n 3,643\n\n Built by\n\n 1,431 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 15,
+    "owner": "diegosouzapw",
+    "name": "OmniRoute",
+    "fullName": "diegosouzapw/OmniRoute",
+    "projectLink": "https://github.com/diegosouzapw/OmniRoute",
+    "description": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilo...",
+    "language": "TypeScript",
+    "stars": 37908,
+    "forks": 4941,
+    "deltaStars": 7141,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "diegosouzapw",
+        "profile": "https://github.com/diegosouzapw"
+      },
+      {
+        "login": "oyi77",
+        "profile": "https://github.com/oyi77"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "rdself",
+        "profile": "https://github.com/rdself"
+      }
+    ],
+    "trendingSnippet": "Sponsor\n\n Star\n\n diegosouzapw /\n\n OmniRoute\n\n Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 500+ contributors\n\n TypeScript\n\n 37,908\n\n 4,941\n\n Built by\n\n 7,141 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 16,
+    "owner": "earthtojake",
+    "name": "text-to-cad",
+    "fullName": "earthtojake/text-to-cad",
+    "projectLink": "https://github.com/earthtojake/text-to-cad",
+    "description": "A library of agent skills for CAD, CAE and CAM",
+    "language": "JavaScript",
+    "stars": 12520,
+    "forks": 1328,
+    "deltaStars": 2063,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "earthtojake",
+        "profile": "https://github.com/earthtojake"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      },
+      {
+        "login": "rootsbymenda",
+        "profile": "https://github.com/rootsbymenda"
+      },
+      {
+        "login": "arronzhang",
+        "profile": "https://github.com/arronzhang"
+      }
+    ],
+    "trendingSnippet": "Star\n\n earthtojake /\n\n text-to-cad\n\n A library of agent skills for CAD, CAE and CAM\n\n JavaScript\n\n 12,520\n\n 1,328\n\n Built by\n\n 2,063 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 17,
+    "owner": "microsoft",
+    "name": "TRELLIS.2",
+    "fullName": "microsoft/TRELLIS.2",
+    "projectLink": "https://github.com/microsoft/TRELLIS.2",
+    "description": "Native and Compact Structured Latents for 3D Generation",
+    "language": "Python",
+    "stars": 10162,
+    "forks": 1220,
+    "deltaStars": 1106,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "JeffreyXiang",
+        "profile": "https://github.com/JeffreyXiang"
+      }
+    ],
+    "trendingSnippet": "Star\n\n microsoft /\n\n TRELLIS.2\n\n Native and Compact Structured Latents for 3D Generation\n\n Python\n\n 10,162\n\n 1,220\n\n Built by\n\n 1,106 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 18,
+    "owner": "different-ai",
+    "name": "openwork",
+    "fullName": "different-ai/openwork",
+    "projectLink": "https://github.com/different-ai/openwork",
+    "description": "The open-source alternative to Claude Cowork (powered by opencode)",
+    "language": "TypeScript",
+    "stars": 20318,
+    "forks": 2088,
+    "deltaStars": 2925,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "benjaminshafii",
+        "profile": "https://github.com/benjaminshafii"
+      },
+      {
+        "login": "src-opn",
+        "profile": "https://github.com/src-opn"
+      },
+      {
+        "login": "jcllobet",
+        "profile": "https://github.com/jcllobet"
+      },
+      {
+        "login": "release-bot",
+        "profile": "https://github.com/release-bot"
+      },
+      {
+        "login": "actions-user",
+        "profile": "https://github.com/actions-user"
+      }
+    ],
+    "trendingSnippet": "Star\n\n different-ai /\n\n openwork\n\n The open-source alternative to Claude Cowork (powered by opencode)\n\n TypeScript\n\n 20,318\n\n 2,088\n\n Built by\n\n 2,925 stars this week"
+  },
+  {
+    "period": "weekly",
+    "rank": 19,
+    "owner": "permissionlesstech",
+    "name": "bitchat-android",
+    "fullName": "permissionlesstech/bitchat-android",
+    "projectLink": "https://github.com/permissionlesstech/bitchat-android",
+    "description": "decentralized mesh chat",
+    "language": "Kotlin",
+    "stars": 7258,
+    "forks": 1788,
+    "deltaStars": 928,
+    "deltaLabel": "本周新增",
+    "contributors": [
+      {
+        "login": "callebtc",
+        "profile": "https://github.com/callebtc"
+      },
+      {
+        "login": "actions-user",
+        "profile": "https://github.com/actions-user"
+      },
+      {
+        "login": "a1denvalu3",
+        "profile": "https://github.com/a1denvalu3"
+      },
+      {
+        "login": "moehamade",
+        "profile": "https://github.com/moehamade"
+      },
+      {
+        "login": "claude",
+        "profile": "https://github.com/claude"
+      }
+    ],
+    "trendingSnippet": "Star\n\n permissionlesstech /\n\n bitchat-android\n\n decentralized mesh chat\n\n Kotlin\n\n 7,258\n\n 1,788\n\n Built by\n\n 928 stars this week"
+  }
+]
